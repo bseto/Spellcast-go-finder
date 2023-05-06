@@ -1,9 +1,6 @@
 package main
 
 type Node struct {
-	Visited  int
-	Children []Node
-
 	Letter string
 }
 
@@ -11,34 +8,7 @@ func (n *Node) Continue() (word string, end bool) {
 	return
 }
 
-type DFS struct {
-	visitedStartNode int
-	matrix           [][]string // we'll conceptualize this as row, col
-}
-
-func NewDFS(wordMatrix [][]string) *DFS {
-	//rootNode := Node{}
-
-	//for i, row := range matrix {
-	//for j, col := range row {
-
-	//}
-	//}
-
-	//return &DFS{
-	//matrix: matrix,
-	//}
-	return &DFS{}
-}
-
-// StartNewTile will return a new Node that we can start DFS on
-func (d *DFS) StartNewTile() (node Node) {
-
-	d.visitedStartNode += 1
-	return
-}
-
-func (d *DFS) Break() {
+func DFS(adjacency *[][]Node, tile int) {
 
 }
 
@@ -52,6 +22,7 @@ func ToAdjacenyMatrix(wordMatrix [][]string) (adjacency [][]Node) {
 	for i, row := range wordMatrix {
 		for j := range row {
 			adjacency[tileNumCursor] = GetNeighbors(wordMatrix, i, j)
+			tileNumCursor++
 		}
 	}
 	return
