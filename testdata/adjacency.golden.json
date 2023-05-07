@@ -1,484 +1,628 @@
 [
     [
         {
-            "Letter": "O"
+            "Letter": "O",
+            "AdjacencyAddress": 1
         },
         {
-            "Letter": "E"
+            "Letter": "E",
+            "AdjacencyAddress": 5
         },
         {
-            "Letter": "A"
+            "Letter": "A",
+            "AdjacencyAddress": 6
         }
     ],
     [
         {
-            "Letter": "I"
+            "Letter": "I",
+            "AdjacencyAddress": 0
         },
         {
-            "Letter": "B"
+            "Letter": "B",
+            "AdjacencyAddress": 2
         },
         {
-            "Letter": "E"
+            "Letter": "E",
+            "AdjacencyAddress": 5
         },
         {
-            "Letter": "A"
+            "Letter": "A",
+            "AdjacencyAddress": 6
         },
         {
-            "Letter": "E"
+            "Letter": "E",
+            "AdjacencyAddress": 7
         }
     ],
     [
         {
-            "Letter": "O"
+            "Letter": "O",
+            "AdjacencyAddress": 1
         },
         {
-            "Letter": "E"
+            "Letter": "E",
+            "AdjacencyAddress": 3
         },
         {
-            "Letter": "A"
+            "Letter": "A",
+            "AdjacencyAddress": 6
         },
         {
-            "Letter": "E"
+            "Letter": "E",
+            "AdjacencyAddress": 7
         },
         {
-            "Letter": "D"
+            "Letter": "D",
+            "AdjacencyAddress": 8
         }
     ],
     [
         {
-            "Letter": "B"
+            "Letter": "B",
+            "AdjacencyAddress": 2
         },
         {
-            "Letter": "T"
+            "Letter": "T",
+            "AdjacencyAddress": 4
         },
         {
-            "Letter": "E"
+            "Letter": "E",
+            "AdjacencyAddress": 7
         },
         {
-            "Letter": "D"
+            "Letter": "D",
+            "AdjacencyAddress": 8
         },
         {
-            "Letter": "C"
+            "Letter": "C",
+            "AdjacencyAddress": 9
         }
     ],
     [
         {
-            "Letter": "E"
+            "Letter": "E",
+            "AdjacencyAddress": 3
         },
         {
-            "Letter": "D"
+            "Letter": "D",
+            "AdjacencyAddress": 8
         },
         {
-            "Letter": "C"
+            "Letter": "C",
+            "AdjacencyAddress": 9
         }
     ],
     [
         {
-            "Letter": "I"
+            "Letter": "I",
+            "AdjacencyAddress": 0
         },
         {
-            "Letter": "O"
+            "Letter": "O",
+            "AdjacencyAddress": 1
         },
         {
-            "Letter": "A"
+            "Letter": "A",
+            "AdjacencyAddress": 6
         },
         {
-            "Letter": "E"
+            "Letter": "E",
+            "AdjacencyAddress": 10
         },
         {
-            "Letter": "V"
+            "Letter": "V",
+            "AdjacencyAddress": 11
         }
     ],
     [
         {
-            "Letter": "I"
+            "Letter": "I",
+            "AdjacencyAddress": 0
         },
         {
-            "Letter": "O"
+            "Letter": "O",
+            "AdjacencyAddress": 1
         },
         {
-            "Letter": "B"
+            "Letter": "B",
+            "AdjacencyAddress": 2
         },
         {
-            "Letter": "E"
+            "Letter": "E",
+            "AdjacencyAddress": 5
         },
         {
-            "Letter": "E"
+            "Letter": "E",
+            "AdjacencyAddress": 7
         },
         {
-            "Letter": "E"
+            "Letter": "E",
+            "AdjacencyAddress": 10
         },
         {
-            "Letter": "V"
+            "Letter": "V",
+            "AdjacencyAddress": 11
         },
         {
-            "Letter": "R"
+            "Letter": "R",
+            "AdjacencyAddress": 12
         }
     ],
     [
         {
-            "Letter": "O"
+            "Letter": "O",
+            "AdjacencyAddress": 1
         },
         {
-            "Letter": "B"
+            "Letter": "B",
+            "AdjacencyAddress": 2
         },
         {
-            "Letter": "E"
+            "Letter": "E",
+            "AdjacencyAddress": 3
         },
         {
-            "Letter": "A"
+            "Letter": "A",
+            "AdjacencyAddress": 6
         },
         {
-            "Letter": "D"
+            "Letter": "D",
+            "AdjacencyAddress": 8
         },
         {
-            "Letter": "V"
+            "Letter": "V",
+            "AdjacencyAddress": 11
         },
         {
-            "Letter": "R"
+            "Letter": "R",
+            "AdjacencyAddress": 12
         },
         {
-            "Letter": "D"
+            "Letter": "D",
+            "AdjacencyAddress": 13
         }
     ],
     [
         {
-            "Letter": "B"
+            "Letter": "B",
+            "AdjacencyAddress": 2
         },
         {
-            "Letter": "E"
+            "Letter": "E",
+            "AdjacencyAddress": 3
         },
         {
-            "Letter": "T"
+            "Letter": "T",
+            "AdjacencyAddress": 4
         },
         {
-            "Letter": "E"
+            "Letter": "E",
+            "AdjacencyAddress": 7
         },
         {
-            "Letter": "C"
+            "Letter": "C",
+            "AdjacencyAddress": 9
         },
         {
-            "Letter": "R"
+            "Letter": "R",
+            "AdjacencyAddress": 12
         },
         {
-            "Letter": "D"
+            "Letter": "D",
+            "AdjacencyAddress": 13
         },
         {
-            "Letter": "D"
+            "Letter": "D",
+            "AdjacencyAddress": 14
         }
     ],
     [
         {
-            "Letter": "E"
+            "Letter": "E",
+            "AdjacencyAddress": 3
         },
         {
-            "Letter": "T"
+            "Letter": "T",
+            "AdjacencyAddress": 4
         },
         {
-            "Letter": "D"
+            "Letter": "D",
+            "AdjacencyAddress": 8
         },
         {
-            "Letter": "D"
+            "Letter": "D",
+            "AdjacencyAddress": 13
         },
         {
-            "Letter": "D"
+            "Letter": "D",
+            "AdjacencyAddress": 14
         }
     ],
     [
         {
-            "Letter": "E"
+            "Letter": "E",
+            "AdjacencyAddress": 5
         },
         {
-            "Letter": "A"
+            "Letter": "A",
+            "AdjacencyAddress": 6
         },
         {
-            "Letter": "V"
+            "Letter": "V",
+            "AdjacencyAddress": 11
         },
         {
-            "Letter": "A"
+            "Letter": "A",
+            "AdjacencyAddress": 15
         },
         {
-            "Letter": "A"
+            "Letter": "A",
+            "AdjacencyAddress": 16
         }
     ],
     [
         {
-            "Letter": "E"
+            "Letter": "E",
+            "AdjacencyAddress": 5
         },
         {
-            "Letter": "A"
+            "Letter": "A",
+            "AdjacencyAddress": 6
         },
         {
-            "Letter": "E"
+            "Letter": "E",
+            "AdjacencyAddress": 7
         },
         {
-            "Letter": "E"
+            "Letter": "E",
+            "AdjacencyAddress": 10
         },
         {
-            "Letter": "R"
+            "Letter": "R",
+            "AdjacencyAddress": 12
         },
         {
-            "Letter": "A"
+            "Letter": "A",
+            "AdjacencyAddress": 15
         },
         {
-            "Letter": "A"
+            "Letter": "A",
+            "AdjacencyAddress": 16
         },
         {
-            "Letter": "E"
+            "Letter": "E",
+            "AdjacencyAddress": 17
         }
     ],
     [
         {
-            "Letter": "A"
+            "Letter": "A",
+            "AdjacencyAddress": 6
         },
         {
-            "Letter": "E"
+            "Letter": "E",
+            "AdjacencyAddress": 7
         },
         {
-            "Letter": "D"
+            "Letter": "D",
+            "AdjacencyAddress": 8
         },
         {
-            "Letter": "V"
+            "Letter": "V",
+            "AdjacencyAddress": 11
         },
         {
-            "Letter": "D"
+            "Letter": "D",
+            "AdjacencyAddress": 13
         },
         {
-            "Letter": "A"
+            "Letter": "A",
+            "AdjacencyAddress": 16
         },
         {
-            "Letter": "E"
+            "Letter": "E",
+            "AdjacencyAddress": 17
         },
         {
-            "Letter": "G"
+            "Letter": "G",
+            "AdjacencyAddress": 18
         }
     ],
     [
         {
-            "Letter": "E"
+            "Letter": "E",
+            "AdjacencyAddress": 7
         },
         {
-            "Letter": "D"
+            "Letter": "D",
+            "AdjacencyAddress": 8
         },
         {
-            "Letter": "C"
+            "Letter": "C",
+            "AdjacencyAddress": 9
         },
         {
-            "Letter": "R"
+            "Letter": "R",
+            "AdjacencyAddress": 12
         },
         {
-            "Letter": "D"
+            "Letter": "D",
+            "AdjacencyAddress": 14
         },
         {
-            "Letter": "E"
+            "Letter": "E",
+            "AdjacencyAddress": 17
         },
         {
-            "Letter": "G"
+            "Letter": "G",
+            "AdjacencyAddress": 18
         },
         {
-            "Letter": "N"
+            "Letter": "N",
+            "AdjacencyAddress": 19
         }
     ],
     [
         {
-            "Letter": "D"
+            "Letter": "D",
+            "AdjacencyAddress": 8
         },
         {
-            "Letter": "C"
+            "Letter": "C",
+            "AdjacencyAddress": 9
         },
         {
-            "Letter": "D"
+            "Letter": "D",
+            "AdjacencyAddress": 13
         },
         {
-            "Letter": "G"
+            "Letter": "G",
+            "AdjacencyAddress": 18
         },
         {
-            "Letter": "N"
+            "Letter": "N",
+            "AdjacencyAddress": 19
         }
     ],
     [
         {
-            "Letter": "E"
+            "Letter": "E",
+            "AdjacencyAddress": 10
         },
         {
-            "Letter": "V"
+            "Letter": "V",
+            "AdjacencyAddress": 11
         },
         {
-            "Letter": "A"
+            "Letter": "A",
+            "AdjacencyAddress": 16
         },
         {
-            "Letter": "G"
+            "Letter": "G",
+            "AdjacencyAddress": 20
         },
         {
-            "Letter": "L"
+            "Letter": "L",
+            "AdjacencyAddress": 21
         }
     ],
     [
         {
-            "Letter": "E"
+            "Letter": "E",
+            "AdjacencyAddress": 10
         },
         {
-            "Letter": "V"
+            "Letter": "V",
+            "AdjacencyAddress": 11
         },
         {
-            "Letter": "R"
+            "Letter": "R",
+            "AdjacencyAddress": 12
         },
         {
-            "Letter": "A"
+            "Letter": "A",
+            "AdjacencyAddress": 15
         },
         {
-            "Letter": "E"
+            "Letter": "E",
+            "AdjacencyAddress": 17
         },
         {
-            "Letter": "G"
+            "Letter": "G",
+            "AdjacencyAddress": 20
         },
         {
-            "Letter": "L"
+            "Letter": "L",
+            "AdjacencyAddress": 21
         },
         {
-            "Letter": "U"
+            "Letter": "U",
+            "AdjacencyAddress": 22
         }
     ],
     [
         {
-            "Letter": "V"
+            "Letter": "V",
+            "AdjacencyAddress": 11
         },
         {
-            "Letter": "R"
+            "Letter": "R",
+            "AdjacencyAddress": 12
         },
         {
-            "Letter": "D"
+            "Letter": "D",
+            "AdjacencyAddress": 13
         },
         {
-            "Letter": "A"
+            "Letter": "A",
+            "AdjacencyAddress": 16
         },
         {
-            "Letter": "G"
+            "Letter": "G",
+            "AdjacencyAddress": 18
         },
         {
-            "Letter": "L"
+            "Letter": "L",
+            "AdjacencyAddress": 21
         },
         {
-            "Letter": "U"
+            "Letter": "U",
+            "AdjacencyAddress": 22
         },
         {
-            "Letter": "N"
+            "Letter": "N",
+            "AdjacencyAddress": 23
         }
     ],
     [
         {
-            "Letter": "R"
+            "Letter": "R",
+            "AdjacencyAddress": 12
         },
         {
-            "Letter": "D"
+            "Letter": "D",
+            "AdjacencyAddress": 13
         },
         {
-            "Letter": "D"
+            "Letter": "D",
+            "AdjacencyAddress": 14
         },
         {
-            "Letter": "E"
+            "Letter": "E",
+            "AdjacencyAddress": 17
         },
         {
-            "Letter": "N"
+            "Letter": "N",
+            "AdjacencyAddress": 19
         },
         {
-            "Letter": "U"
+            "Letter": "U",
+            "AdjacencyAddress": 22
         },
         {
-            "Letter": "N"
+            "Letter": "N",
+            "AdjacencyAddress": 23
         },
         {
-            "Letter": "V"
+            "Letter": "V",
+            "AdjacencyAddress": 24
         }
     ],
     [
         {
-            "Letter": "D"
+            "Letter": "D",
+            "AdjacencyAddress": 13
         },
         {
-            "Letter": "D"
+            "Letter": "D",
+            "AdjacencyAddress": 14
         },
         {
-            "Letter": "G"
+            "Letter": "G",
+            "AdjacencyAddress": 18
         },
         {
-            "Letter": "N"
+            "Letter": "N",
+            "AdjacencyAddress": 23
         },
         {
-            "Letter": "V"
+            "Letter": "V",
+            "AdjacencyAddress": 24
         }
     ],
     [
         {
-            "Letter": "A"
+            "Letter": "A",
+            "AdjacencyAddress": 15
         },
         {
-            "Letter": "A"
+            "Letter": "A",
+            "AdjacencyAddress": 16
         },
         {
-            "Letter": "L"
+            "Letter": "L",
+            "AdjacencyAddress": 21
         }
     ],
     [
         {
-            "Letter": "A"
+            "Letter": "A",
+            "AdjacencyAddress": 15
         },
         {
-            "Letter": "A"
+            "Letter": "A",
+            "AdjacencyAddress": 16
         },
         {
-            "Letter": "E"
+            "Letter": "E",
+            "AdjacencyAddress": 17
         },
         {
-            "Letter": "G"
+            "Letter": "G",
+            "AdjacencyAddress": 20
         },
         {
-            "Letter": "U"
+            "Letter": "U",
+            "AdjacencyAddress": 22
         }
     ],
     [
         {
-            "Letter": "A"
+            "Letter": "A",
+            "AdjacencyAddress": 16
         },
         {
-            "Letter": "E"
+            "Letter": "E",
+            "AdjacencyAddress": 17
         },
         {
-            "Letter": "G"
+            "Letter": "G",
+            "AdjacencyAddress": 18
         },
         {
-            "Letter": "L"
+            "Letter": "L",
+            "AdjacencyAddress": 21
         },
         {
-            "Letter": "N"
+            "Letter": "N",
+            "AdjacencyAddress": 23
         }
     ],
     [
         {
-            "Letter": "E"
+            "Letter": "E",
+            "AdjacencyAddress": 17
         },
         {
-            "Letter": "G"
+            "Letter": "G",
+            "AdjacencyAddress": 18
         },
         {
-            "Letter": "N"
+            "Letter": "N",
+            "AdjacencyAddress": 19
         },
         {
-            "Letter": "U"
+            "Letter": "U",
+            "AdjacencyAddress": 22
         },
         {
-            "Letter": "V"
+            "Letter": "V",
+            "AdjacencyAddress": 24
         }
     ],
     [
         {
-            "Letter": "G"
+            "Letter": "G",
+            "AdjacencyAddress": 18
         },
         {
-            "Letter": "N"
+            "Letter": "N",
+            "AdjacencyAddress": 19
         },
         {
-            "Letter": "N"
+            "Letter": "N",
+            "AdjacencyAddress": 23
         }
     ]
 ]

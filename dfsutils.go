@@ -1,16 +1,6 @@
 package main
 
-type Node struct {
-	Letter string
-}
-
-func (n *Node) Continue() (word string, end bool) {
-	return
-}
-
-func DFS(adjacency *[][]Node, tile int) {
-
-}
+import "strings"
 
 // ToAdjacenyMatrix will create a tileNumCursor which represents which tile we
 // are on. Starting from the top left and traveling through the row to the right
@@ -48,7 +38,13 @@ func GetNeighbors(wordMatrix [][]string, row, col int) []Node {
 			if colDeviation == 0 && rowDeviation == 0 {
 				continue // skip itself
 			}
-			Nodes = append(Nodes, Node{Letter: wordMatrix[row+rowDeviation][col+colDeviation]})
+			Nodes = append(
+				Nodes,
+				Node{
+					Letter:           wordMatrix[row+rowDeviation][col+colDeviation],
+					AdjacencyAddress: (height * (row + rowDeviation)) + col + colDeviation,
+				},
+			)
 		}
 	}
 	return Nodes
@@ -63,4 +59,12 @@ func GetWidthAndHeight(wordMatrix [][]string) (int, int) {
 	height := len(wordMatrix)
 	width := len(wordMatrix[0]) // honestly, if there's no width, just panic. I'm not gonna return an error here
 	return width, height
+}
+
+func StringFromSlice(letters []string) string {
+	var b strings.Builder
+	for _, letter := range letters {
+		b.WriteString(letter)
+	}
+	return b.String()
 }
