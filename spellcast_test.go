@@ -28,29 +28,28 @@ func TestSpellCastFinder_FindSolution(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			//a, err := json.Marshal(tt.s.words)
+			scores := tt.s.FindSolution()
+			//a, err := json.Marshal(scores)
 			//if err != nil {
 			//t.Fatalf("unable to write to file: %v", err)
 			//}
-			//err = os.WriteFile(tt.goldenFile, a, 777)
+			//err = os.WriteFile(tt.goldenFile, a, 0777)
 			//if err != nil {
 			//t.Fatalf("unable to write to file: %v", err)
 			//}
+
 			b, err := os.ReadFile(tt.goldenFile)
 			if err != nil {
 				t.Fatalf("unable to setup test: %v", err)
 			}
-			var expectedWordList []string
-			err = json.Unmarshal(b, &expectedWordList)
+			var expectedScores []Score
+			err = json.Unmarshal(b, &expectedScores)
 			if err != nil {
 				t.Fatalf("unable to unmarshal to expected adjacency: %v", err)
 			}
 
-			scores := tt.s.FindSolution()
-			t.Log(scores)
-
-			if !reflect.DeepEqual(tt.s.words, expectedWordList) {
-				t.Errorf("ToAdjacenyMatrix() = %v, want %v", tt.s.words, expectedWordList)
+			if !reflect.DeepEqual(scores, expectedScores) {
+				t.Errorf("ToAdjacenyMatrix() = %v, want %v", tt.s.words, expectedScores)
 			}
 
 		})

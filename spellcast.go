@@ -36,6 +36,7 @@ type Trie interface {
 
 type SpellCastFinder struct {
 	trie            Trie
+	boardMatrix     [][]BoardTile
 	adjacencyMatrix [][]Node
 	words           []NodeWord
 }
@@ -52,15 +53,35 @@ func (n NodeWord) ToString() string {
 
 func NewSpellCastFinder(trie Trie, boardMatrix [][]BoardTile) *SpellCastFinder {
 	return &SpellCastFinder{
-		trie:            trie,
-		adjacencyMatrix: ToAdjacenyMatrix(boardMatrix),
+		trie:        trie,
+		boardMatrix: boardMatrix,
 	}
 }
 
 func (s *SpellCastFinder) FindSolution() []Score {
+	s.adjacencyMatrix = ToAdjacenyMatrix(s.boardMatrix)
 	numOfTiles := len(s.adjacencyMatrix)
 	for i := 0; i < numOfTiles; i++ {
 		s.DFSRecursive(i, []Node{}, map[int]bool{})
+	}
+	s.words = RemoveDuplicates(s.words)
+	return CalculateAndSortByScore(s.words)
+}
+
+func (s *SpellCastFinder) FindSolutionWithSwap() []Score {
+	width, height := GetWidthAndHeight(s.boardMatrix)
+	// for every tile, we want to swap the letter
+	for col := 0; col < height; col++ {
+		for row := 0; row < width; row++ {
+			for letter := 'a'; letter <= 'z'; letter++ {
+				s.boardMatrix[col][row].Letter = string(letter)
+				s.adjacencyMatrix = ToAdjacenyMatrix(s.boardMatrix)
+				numOfTiles := len(s.adjacencyMatrix)
+				for i := 0; i < numOfTiles; i++ {
+					s.DFSRecursive(i, []Node{}, map[int]bool{})
+				}
+			}
+		}
 	}
 	s.words = RemoveDuplicates(s.words)
 	return CalculateAndSortByScore(s.words)

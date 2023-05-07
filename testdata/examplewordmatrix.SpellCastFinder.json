@@ -1,1 +1,1374 @@
-["o","obdt","oar","oared","oer","eave","eaved","eaver","ear","eared","ee","ever","eval","evalue","a","aob","abet","abed","abede","abedge","abd","ae","aer","aedeagal","aver","aval","avale","ar","ared","ard","ardeb","arvel","area","areae","areal","areg","aren","areng","argel","argue","argued","i","ie","ia","iare","bet","beeve","bedravel","bedral","bedrel","bedder","bec","bared","bardee","barded","barvel","bardel","barge","barged","beet","beared","bevel","bere","bereave","bedeguar","bedel","beden","ed","edder","er","eral","erg","edger","oie","et","eer","deed","decd","deet","deave","deaved","deare","deve","deval","devalue","devalued","devaul","devel","derv","derve","dere","dedd","dree","drevel","dredge","drag","dreg","dreng","boe","boa","board","boarded","debar","drab","cdg","debe","cee","cede","ceder","ceded","cedre","iao","eagled","vare","vara","vedet","verd","verdet","verdea","verged","vealer","vealed","veau","vag","vagal","value","valuer","valued","vau","veg","vel","velar","venula","venulae","venular","vei","rebed","rebec","reet","red","rede","redden","reve","reveal","revealed","revalue","revalued","revel","revenual","redeal","rave","raved","rag","raga","rale","raun","raunge","redeed","reded","reaved","reaal","real","regd","regula","rel","renn","renu","rg","raob","deal","deg","degu","deul","tee","teevee","teer","teed","cte","degree","dreed","degreed","aal","aga","agal","agla","aglare","al","alarge","alae","ale","alen","alenu","alga","algarde","algae","auger","augen","aul","aula","aune","aulae","egre","el","en","engr","enguard","env","gedd","gea","geal","gen","genu","genua","genual","guava","gue","gul","gulae","gule","gneu","gv","engrave","engraved","gra","grab","grav","grave","graved","gravel","graven","gre","grebe","gree","greet","greed","greave","graal","greaved","gervao","gear","geared","guar","guara","guard","guardee","guereba","gular","n","gedder","guarded","gaea","gave","gavel","gara","garde","garg","gaed","gaen","galera","galere","gau","gauge","gauger","gauged","gaun","glave","glaver","glavered","glar","glare","glared","gled","glede","gleave","gleg","glue","gluer","glued","glug","lav","lave","lava","laved","lare","laree","lard","larded","larve","larva","larvae","large","largen","laen","lag","laun","le","leve","levee","leva","leveed","lere","lede","leave","leaved","leaver","leg","legua","leu","leung","leng","lue","luge","luged","lung","lunge","lunger","lunged","ule","ung","ungrave","ungraved","unn","ular","uneaved","uneared","never","nere","nerd","nerve","nerved","neral","nedder","neared","garava","ungear","ungeared"]
+[
+    {
+        "Word": "i",
+        "Score": 1
+    },
+    {
+        "Word": "o",
+        "Score": 1
+    },
+    {
+        "Word": "a",
+        "Score": 1
+    },
+    {
+        "Word": "ee",
+        "Score": 2
+    },
+    {
+        "Word": "ia",
+        "Score": 2
+    },
+    {
+        "Word": "ie",
+        "Score": 2
+    },
+    {
+        "Word": "n",
+        "Score": 2
+    },
+    {
+        "Word": "ae",
+        "Score": 2
+    },
+    {
+        "Word": "ar",
+        "Score": 3
+    },
+    {
+        "Word": "iao",
+        "Score": 3
+    },
+    {
+        "Word": "er",
+        "Score": 3
+    },
+    {
+        "Word": "oie",
+        "Score": 3
+    },
+    {
+        "Word": "et",
+        "Score": 3
+    },
+    {
+        "Word": "aer",
+        "Score": 4
+    },
+    {
+        "Word": "ear",
+        "Score": 4
+    },
+    {
+        "Word": "ed",
+        "Score": 4
+    },
+    {
+        "Word": "oar",
+        "Score": 4
+    },
+    {
+        "Word": "eer",
+        "Score": 4
+    },
+    {
+        "Word": "al",
+        "Score": 4
+    },
+    {
+        "Word": "en",
+        "Score": 4
+    },
+    {
+        "Word": "oer",
+        "Score": 4
+    },
+    {
+        "Word": "tee",
+        "Score": 4
+    },
+    {
+        "Word": "le",
+        "Score": 5
+    },
+    {
+        "Word": "aal",
+        "Score": 5
+    },
+    {
+        "Word": "rg",
+        "Score": 5
+    },
+    {
+        "Word": "el",
+        "Score": 5
+    },
+    {
+        "Word": "aga",
+        "Score": 5
+    },
+    {
+        "Word": "raoe",
+        "Score": 5
+    },
+    {
+        "Word": "rag",
+        "Score": 6
+    },
+    {
+        "Word": "erg",
+        "Score": 6
+    },
+    {
+        "Word": "gra",
+        "Score": 6
+    },
+    {
+        "Word": "ale",
+        "Score": 6
+    },
+    {
+        "Word": "gre",
+        "Score": 6
+    },
+    {
+        "Word": "ard",
+        "Score": 6
+    },
+    {
+        "Word": "gea",
+        "Score": 6
+    },
+    {
+        "Word": "boa",
+        "Score": 6
+    },
+    {
+        "Word": "red",
+        "Score": 6
+    },
+    {
+        "Word": "gaea",
+        "Score": 6
+    },
+    {
+        "Word": "aob",
+        "Score": 6
+    },
+    {
+        "Word": "boe",
+        "Score": 6
+    },
+    {
+        "Word": "aren",
+        "Score": 7
+    },
+    {
+        "Word": "vei",
+        "Score": 7
+    },
+    {
+        "Word": "lag",
+        "Score": 7
+    },
+    {
+        "Word": "cee",
+        "Score": 7
+    },
+    {
+        "Word": "gen",
+        "Score": 7
+    },
+    {
+        "Word": "teed",
+        "Score": 7
+    },
+    {
+        "Word": "iarg",
+        "Score": 7
+    },
+    {
+        "Word": "bet",
+        "Score": 7
+    },
+    {
+        "Word": "ared",
+        "Score": 7
+    },
+    {
+        "Word": "rel",
+        "Score": 7
+    },
+    {
+        "Word": "areae",
+        "Score": 7
+    },
+    {
+        "Word": "deg",
+        "Score": 8
+    },
+    {
+        "Word": "leg",
+        "Score": 8
+    },
+    {
+        "Word": "alen",
+        "Score": 8
+    },
+    {
+        "Word": "gau",
+        "Score": 8
+    },
+    {
+        "Word": "agal",
+        "Score": 8
+    },
+    {
+        "Word": "gaen",
+        "Score": 8
+    },
+    {
+        "Word": "aul",
+        "Score": 8
+    },
+    {
+        "Word": "alal",
+        "Score": 8
+    },
+    {
+        "Word": "unn",
+        "Score": 8
+    },
+    {
+        "Word": "laen",
+        "Score": 8
+    },
+    {
+        "Word": "drar",
+        "Score": 8
+    },
+    {
+        "Word": "deed",
+        "Score": 8
+    },
+    {
+        "Word": "oared",
+        "Score": 8
+    },
+    {
+        "Word": "redn",
+        "Score": 8
+    },
+    {
+        "Word": "abd",
+        "Score": 8
+    },
+    {
+        "Word": "eared",
+        "Score": 8
+    },
+    {
+        "Word": "laree",
+        "Score": 8
+    },
+    {
+        "Word": "grar",
+        "Score": 8
+    },
+    {
+        "Word": "cte",
+        "Score": 8
+    },
+    {
+        "Word": "erau",
+        "Score": 8
+    },
+    {
+        "Word": "greet",
+        "Score": 9
+    },
+    {
+        "Word": "abed",
+        "Score": 9
+    },
+    {
+        "Word": "nerg",
+        "Score": 9
+    },
+    {
+        "Word": "gnen",
+        "Score": 9
+    },
+    {
+        "Word": "ung",
+        "Score": 9
+    },
+    {
+        "Word": "gue",
+        "Score": 9
+    },
+    {
+        "Word": "eave",
+        "Score": 9
+    },
+    {
+        "Word": "leu",
+        "Score": 9
+    },
+    {
+        "Word": "gred",
+        "Score": 9
+    },
+    {
+        "Word": "larg",
+        "Score": 9
+    },
+    {
+        "Word": "redd",
+        "Score": 9
+    },
+    {
+        "Word": "reec",
+        "Score": 9
+    },
+    {
+        "Word": "agau",
+        "Score": 9
+    },
+    {
+        "Word": "lue",
+        "Score": 9
+    },
+    {
+        "Word": "deare",
+        "Score": 9
+    },
+    {
+        "Word": "areal",
+        "Score": 9
+    },
+    {
+        "Word": "reau",
+        "Score": 9
+    },
+    {
+        "Word": "vag",
+        "Score": 9
+    },
+    {
+        "Word": "ule",
+        "Score": 9
+    },
+    {
+        "Word": "alau",
+        "Score": 9
+    },
+    {
+        "Word": "lav",
+        "Score": 9
+    },
+    {
+        "Word": "derg",
+        "Score": 9
+    },
+    {
+        "Word": "garg",
+        "Score": 9
+    },
+    {
+        "Word": "dedn",
+        "Score": 9
+    },
+    {
+        "Word": "dred",
+        "Score": 9
+    },
+    {
+        "Word": "reaal",
+        "Score": 9
+    },
+    {
+        "Word": "raun",
+        "Score": 9
+    },
+    {
+        "Word": "ragl",
+        "Score": 9
+    },
+    {
+        "Word": "dren",
+        "Score": 9
+    },
+    {
+        "Word": "abede",
+        "Score": 10
+    },
+    {
+        "Word": "even",
+        "Score": 10
+    },
+    {
+        "Word": "algae",
+        "Score": 10
+    },
+    {
+        "Word": "algl",
+        "Score": 10
+    },
+    {
+        "Word": "drau",
+        "Score": 10
+    },
+    {
+        "Word": "aulae",
+        "Score": 10
+    },
+    {
+        "Word": "egrg",
+        "Score": 10
+    },
+    {
+        "Word": "gedn",
+        "Score": 10
+    },
+    {
+        "Word": "eval",
+        "Score": 10
+    },
+    {
+        "Word": "geau",
+        "Score": 10
+    },
+    {
+        "Word": "deec",
+        "Score": 10
+    },
+    {
+        "Word": "eved",
+        "Score": 10
+    },
+    {
+        "Word": "aved",
+        "Score": 10
+    },
+    {
+        "Word": "dreed",
+        "Score": 10
+    },
+    {
+        "Word": "dedd",
+        "Score": 10
+    },
+    {
+        "Word": "eaver",
+        "Score": 10
+    },
+    {
+        "Word": "aval",
+        "Score": 10
+    },
+    {
+        "Word": "gul",
+        "Score": 10
+    },
+    {
+        "Word": "ledn",
+        "Score": 10
+    },
+    {
+        "Word": "aven",
+        "Score": 10
+    },
+    {
+        "Word": "deau",
+        "Score": 10
+    },
+    {
+        "Word": "berg",
+        "Score": 10
+    },
+    {
+        "Word": "greed",
+        "Score": 10
+    },
+    {
+        "Word": "grau",
+        "Score": 10
+    },
+    {
+        "Word": "graal",
+        "Score": 10
+    },
+    {
+        "Word": "lerg",
+        "Score": 10
+    },
+    {
+        "Word": "garde",
+        "Score": 10
+    },
+    {
+        "Word": "bec",
+        "Score": 10
+    },
+    {
+        "Word": "ralu",
+        "Score": 10
+    },
+    {
+        "Word": "vau",
+        "Score": 10
+    },
+    {
+        "Word": "gaun",
+        "Score": 10
+    },
+    {
+        "Word": "veg",
+        "Score": 10
+    },
+    {
+        "Word": "vel",
+        "Score": 10
+    },
+    {
+        "Word": "neral",
+        "Score": 10
+    },
+    {
+        "Word": "rave",
+        "Score": 10
+    },
+    {
+        "Word": "glare",
+        "Score": 10
+    },
+    {
+        "Word": "glen",
+        "Score": 10
+    },
+    {
+        "Word": "reve",
+        "Score": 10
+    },
+    {
+        "Word": "areng",
+        "Score": 10
+    },
+    {
+        "Word": "laun",
+        "Score": 10
+    },
+    {
+        "Word": "deve",
+        "Score": 11
+    },
+    {
+        "Word": "verg",
+        "Score": 11
+    },
+    {
+        "Word": "neared",
+        "Score": 11
+    },
+    {
+        "Word": "rebed",
+        "Score": 11
+    },
+    {
+        "Word": "obdd",
+        "Score": 11
+    },
+    {
+        "Word": "eaved",
+        "Score": 11
+    },
+    {
+        "Word": "evau",
+        "Score": 11
+    },
+    {
+        "Word": "abec",
+        "Score": 11
+    },
+    {
+        "Word": "avau",
+        "Score": 11
+    },
+    {
+        "Word": "ardeb",
+        "Score": 11
+    },
+    {
+        "Word": "argel",
+        "Score": 11
+    },
+    {
+        "Word": "large",
+        "Score": 11
+    },
+    {
+        "Word": "lave",
+        "Score": 11
+    },
+    {
+        "Word": "glau",
+        "Score": 11
+    },
+    {
+        "Word": "bared",
+        "Score": 11
+    },
+    {
+        "Word": "gave",
+        "Score": 11
+    },
+    {
+        "Word": "guara",
+        "Score": 11
+    },
+    {
+        "Word": "beec",
+        "Score": 11
+    },
+    {
+        "Word": "grebe",
+        "Score": 11
+    },
+    {
+        "Word": "edder",
+        "Score": 11
+    },
+    {
+        "Word": "edger",
+        "Score": 11
+    },
+    {
+        "Word": "deave",
+        "Score": 11
+    },
+    {
+        "Word": "reded",
+        "Score": 11
+    },
+    {
+        "Word": "board",
+        "Score": 11
+    },
+    {
+        "Word": "debar",
+        "Score": 11
+    },
+    {
+        "Word": "veau",
+        "Score": 11
+    },
+    {
+        "Word": "cdg",
+        "Score": 11
+    },
+    {
+        "Word": "aglu",
+        "Score": 11
+    },
+    {
+        "Word": "debd",
+        "Score": 11
+    },
+    {
+        "Word": "varg",
+        "Score": 11
+    },
+    {
+        "Word": "teevea",
+        "Score": 11
+    },
+    {
+        "Word": "deun",
+        "Score": 11
+    },
+    {
+        "Word": "bearen",
+        "Score": 12
+    },
+    {
+        "Word": "auger",
+        "Score": 12
+    },
+    {
+        "Word": "grave",
+        "Score": 12
+    },
+    {
+        "Word": "beden",
+        "Score": 12
+    },
+    {
+        "Word": "vedet",
+        "Score": 12
+    },
+    {
+        "Word": "nerve",
+        "Score": 12
+    },
+    {
+        "Word": "never",
+        "Score": 12
+    },
+    {
+        "Word": "ulau",
+        "Score": 12
+    },
+    {
+        "Word": "eaglen",
+        "Score": 12
+    },
+    {
+        "Word": "gulae",
+        "Score": 12
+    },
+    {
+        "Word": "barge",
+        "Score": 12
+    },
+    {
+        "Word": "cedre",
+        "Score": 12
+    },
+    {
+        "Word": "geared",
+        "Score": 12
+    },
+    {
+        "Word": "avale",
+        "Score": 12
+    },
+    {
+        "Word": "leave",
+        "Score": 12
+    },
+    {
+        "Word": "ceder",
+        "Score": 12
+    },
+    {
+        "Word": "cedd",
+        "Score": 12
+    },
+    {
+        "Word": "levee",
+        "Score": 12
+    },
+    {
+        "Word": "leve",
+        "Score": 12
+    },
+    {
+        "Word": "guau",
+        "Score": 12
+    },
+    {
+        "Word": "genua",
+        "Score": 12
+    },
+    {
+        "Word": "decd",
+        "Score": 12
+    },
+    {
+        "Word": "raved",
+        "Score": 12
+    },
+    {
+        "Word": "argue",
+        "Score": 12
+    },
+    {
+        "Word": "glede",
+        "Score": 12
+    },
+    {
+        "Word": "alenu",
+        "Score": 12
+    },
+    {
+        "Word": "larva",
+        "Score": 12
+    },
+    {
+        "Word": "larve",
+        "Score": 12
+    },
+    {
+        "Word": "dreng",
+        "Score": 12
+    },
+    {
+        "Word": "glun",
+        "Score": 12
+    },
+    {
+        "Word": "derve",
+        "Score": 12
+    },
+    {
+        "Word": "augen",
+        "Score": 12
+    },
+    {
+        "Word": "beeve",
+        "Score": 12
+    },
+    {
+        "Word": "aulu",
+        "Score": 12
+    },
+    {
+        "Word": "laved",
+        "Score": 13
+    },
+    {
+        "Word": "bedel",
+        "Score": 13
+    },
+    {
+        "Word": "larded",
+        "Score": 13
+    },
+    {
+        "Word": "largen",
+        "Score": 13
+    },
+    {
+        "Word": "glaren",
+        "Score": 13
+    },
+    {
+        "Word": "glared",
+        "Score": 13
+    },
+    {
+        "Word": "redeau",
+        "Score": 13
+    },
+    {
+        "Word": "glave",
+        "Score": 13
+    },
+    {
+        "Word": "gauge",
+        "Score": 13
+    },
+    {
+        "Word": "deval",
+        "Score": 13
+    },
+    {
+        "Word": "vagal",
+        "Score": 13
+    },
+    {
+        "Word": "gular",
+        "Score": 13
+    },
+    {
+        "Word": "revel",
+        "Score": 13
+    },
+    {
+        "Word": "guard",
+        "Score": 13
+    },
+    {
+        "Word": "arvel",
+        "Score": 13
+    },
+    {
+        "Word": "velar",
+        "Score": 13
+    },
+    {
+        "Word": "aglarg",
+        "Score": 13
+    },
+    {
+        "Word": "ceded",
+        "Score": 13
+    },
+    {
+        "Word": "legua",
+        "Score": 13
+    },
+    {
+        "Word": "reaven",
+        "Score": 13
+    },
+    {
+        "Word": "rebec",
+        "Score": 13
+    },
+    {
+        "Word": "reveal",
+        "Score": 13
+    },
+    {
+        "Word": "redden",
+        "Score": 13
+    },
+    {
+        "Word": "deaven",
+        "Score": 14
+    },
+    {
+        "Word": "lunge",
+        "Score": 14
+    },
+    {
+        "Word": "larvar",
+        "Score": 14
+    },
+    {
+        "Word": "reaved",
+        "Score": 14
+    },
+    {
+        "Word": "engrare",
+        "Score": 14
+    },
+    {
+        "Word": "arguen",
+        "Score": 14
+    },
+    {
+        "Word": "nedded",
+        "Score": 14
+    },
+    {
+        "Word": "gluer",
+        "Score": 14
+    },
+    {
+        "Word": "devel",
+        "Score": 14
+    },
+    {
+        "Word": "vealen",
+        "Score": 14
+    },
+    {
+        "Word": "bedren",
+        "Score": 14
+    },
+    {
+        "Word": "garave",
+        "Score": 14
+    },
+    {
+        "Word": "gulu",
+        "Score": 14
+    },
+    {
+        "Word": "degred",
+        "Score": 14
+    },
+    {
+        "Word": "greave",
+        "Score": 14
+    },
+    {
+        "Word": "bargen",
+        "Score": 14
+    },
+    {
+        "Word": "galerg",
+        "Score": 14
+    },
+    {
+        "Word": "leung",
+        "Score": 14
+    },
+    {
+        "Word": "barded",
+        "Score": 14
+    },
+    {
+        "Word": "gavel",
+        "Score": 14
+    },
+    {
+        "Word": "guava",
+        "Score": 14
+    },
+    {
+        "Word": "barden",
+        "Score": 14
+    },
+    {
+        "Word": "reveau",
+        "Score": 14
+    },
+    {
+        "Word": "redeec",
+        "Score": 14
+    },
+    {
+        "Word": "gervar",
+        "Score": 15
+    },
+    {
+        "Word": "boardnn",
+        "Score": 15
+    },
+    {
+        "Word": "larval",
+        "Score": 15
+    },
+    {
+        "Word": "algargn",
+        "Score": 15
+    },
+    {
+        "Word": "gedded",
+        "Score": 15
+    },
+    {
+        "Word": "luged",
+        "Score": 15
+    },
+    {
+        "Word": "verden",
+        "Score": 15
+    },
+    {
+        "Word": "vergen",
+        "Score": 15
+    },
+    {
+        "Word": "dreven",
+        "Score": 15
+    },
+    {
+        "Word": "nerved",
+        "Score": 15
+    },
+    {
+        "Word": "engrarea",
+        "Score": 15
+    },
+    {
+        "Word": "teevev",
+        "Score": 15
+    },
+    {
+        "Word": "value",
+        "Score": 15
+    },
+    {
+        "Word": "bedden",
+        "Score": 15
+    },
+    {
+        "Word": "glued",
+        "Score": 15
+    },
+    {
+        "Word": "gaugen",
+        "Score": 15
+    },
+    {
+        "Word": "bedded",
+        "Score": 15
+    },
+    {
+        "Word": "deaved",
+        "Score": 15
+    },
+    {
+        "Word": "graved",
+        "Score": 15
+    },
+    {
+        "Word": "leaved",
+        "Score": 15
+    },
+    {
+        "Word": "graven",
+        "Score": 15
+    },
+    {
+        "Word": "bedrau",
+        "Score": 15
+    },
+    {
+        "Word": "bevel",
+        "Score": 15
+    },
+    {
+        "Word": "greavea",
+        "Score": 16
+    },
+    {
+        "Word": "bereaue",
+        "Score": 16
+    },
+    {
+        "Word": "ungrare",
+        "Score": 16
+    },
+    {
+        "Word": "degredr",
+        "Score": 16
+    },
+    {
+        "Word": "devaun",
+        "Score": 16
+    },
+    {
+        "Word": "gleave",
+        "Score": 16
+    },
+    {
+        "Word": "glaven",
+        "Score": 16
+    },
+    {
+        "Word": "glaved",
+        "Score": 16
+    },
+    {
+        "Word": "verded",
+        "Score": 16
+    },
+    {
+        "Word": "lungen",
+        "Score": 16
+    },
+    {
+        "Word": "bardec",
+        "Score": 16
+    },
+    {
+        "Word": "gv",
+        "Score": 16
+    },
+    {
+        "Word": "evalun",
+        "Score": 16
+    },
+    {
+        "Word": "ungeau",
+        "Score": 16
+    },
+    {
+        "Word": "barven",
+        "Score": 16
+    },
+    {
+        "Word": "greaven",
+        "Score": 16
+    },
+    {
+        "Word": "genuau",
+        "Score": 16
+    },
+    {
+        "Word": "engraue",
+        "Score": 16
+    },
+    {
+        "Word": "leveec",
+        "Score": 17
+    },
+    {
+        "Word": "valuen",
+        "Score": 17
+    },
+    {
+        "Word": "bedraren",
+        "Score": 17
+    },
+    {
+        "Word": "ungrarea",
+        "Score": 17
+    },
+    {
+        "Word": "engrauea",
+        "Score": 17
+    },
+    {
+        "Word": "guardnn",
+        "Score": 17
+    },
+    {
+        "Word": "uneavea",
+        "Score": 17
+    },
+    {
+        "Word": "uneargd",
+        "Score": 17
+    },
+    {
+        "Word": "verdec",
+        "Score": 17
+    },
+    {
+        "Word": "boarddd",
+        "Score": 17
+    },
+    {
+        "Word": "regulu",
+        "Score": 18
+    },
+    {
+        "Word": "guardnd",
+        "Score": 18
+    },
+    {
+        "Word": "ungraren",
+        "Score": 18
+    },
+    {
+        "Word": "env",
+        "Score": 18
+    },
+    {
+        "Word": "aedeaull",
+        "Score": 18
+    },
+    {
+        "Word": "revalun",
+        "Score": 18
+    },
+    {
+        "Word": "ungraue",
+        "Score": 18
+    },
+    {
+        "Word": "gueredd",
+        "Score": 18
+    },
+    {
+        "Word": "enguaug",
+        "Score": 19
+    },
+    {
+        "Word": "devalun",
+        "Score": 19
+    },
+    {
+        "Word": "guarddd",
+        "Score": 19
+    },
+    {
+        "Word": "revealun",
+        "Score": 19
+    },
+    {
+        "Word": "ungrauea",
+        "Score": 19
+    },
+    {
+        "Word": "revalunn",
+        "Score": 20
+    },
+    {
+        "Word": "reveauun",
+        "Score": 20
+    },
+    {
+        "Word": "ungrauen",
+        "Score": 20
+    },
+    {
+        "Word": "venulu",
+        "Score": 20
+    },
+    {
+        "Word": "glavedgn",
+        "Score": 21
+    },
+    {
+        "Word": "devalunn",
+        "Score": 21
+    },
+    {
+        "Word": "bedrauun",
+        "Score": 21
+    },
+    {
+        "Word": "ungeaugd",
+        "Score": 22
+    },
+    {
+        "Word": "glavengd",
+        "Score": 22
+    },
+    {
+        "Word": "renv",
+        "Score": 22
+    },
+    {
+        "Word": "venulul",
+        "Score": 23
+    },
+    {
+        "Word": "venuluu",
+        "Score": 24
+    },
+    {
+        "Word": "aunv",
+        "Score": 24
+    },
+    {
+        "Word": "genv",
+        "Score": 24
+    },
+    {
+        "Word": "engv",
+        "Score": 24
+    },
+    {
+        "Word": "lenv",
+        "Score": 24
+    },
+    {
+        "Word": "regv",
+        "Score": 24
+    },
+    {
+        "Word": "degv",
+        "Score": 26
+    },
+    {
+        "Word": "lunv",
+        "Score": 28
+    },
+    {
+        "Word": "alargv",
+        "Score": 30
+    },
+    {
+        "Word": "lugv",
+        "Score": 30
+    },
+    {
+        "Word": "dredgv",
+        "Score": 34
+    },
+    {
+        "Word": "abedgv",
+        "Score": 34
+    },
+    {
+        "Word": "raungv",
+        "Score": 34
+    },
+    {
+        "Word": "revenvnu",
+        "Score": 46
+    },
+    {
+        "Word": "bedegvnu",
+        "Score": 48
+    }
+]

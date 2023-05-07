@@ -19,10 +19,10 @@ var exampleWordMatrix = [][]BoardTile{
 		Letter("e"), Letter("v"), Letter("r"), Letter("d"), Letter("d"),
 	},
 	{
-		Letter("a"), Letter("a"), Letter("e"), Letter("g"), Letter("n"),
+		Letter("a"), Letter("a"), LetterMult("e", 2), Letter("g"), Letter("n"),
 	},
 	{
-		Letter("g"), Letter("l"), Letter("u"), Letter("n"), Letter("v"),
+		Letter("g"), Letter("l"), Letter("u"), Letter("n"), LetterDouble("v"),
 	},
 }
 

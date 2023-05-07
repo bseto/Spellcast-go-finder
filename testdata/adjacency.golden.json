@@ -427,7 +427,7 @@
         {
             "Letter": "e",
             "AdjacencyAddress": 17,
-            "Multiplier": 1,
+            "Multiplier": 2,
             "IsDoublePoint": false
         }
     ],
@@ -471,7 +471,7 @@
         {
             "Letter": "e",
             "AdjacencyAddress": 17,
-            "Multiplier": 1,
+            "Multiplier": 2,
             "IsDoublePoint": false
         },
         {
@@ -515,7 +515,7 @@
         {
             "Letter": "e",
             "AdjacencyAddress": 17,
-            "Multiplier": 1,
+            "Multiplier": 2,
             "IsDoublePoint": false
         },
         {
@@ -623,7 +623,7 @@
         {
             "Letter": "e",
             "AdjacencyAddress": 17,
-            "Multiplier": 1,
+            "Multiplier": 2,
             "IsDoublePoint": false
         },
         {
@@ -717,7 +717,7 @@
         {
             "Letter": "e",
             "AdjacencyAddress": 17,
-            "Multiplier": 1,
+            "Multiplier": 2,
             "IsDoublePoint": false
         },
         {
@@ -742,7 +742,7 @@
             "Letter": "v",
             "AdjacencyAddress": 24,
             "Multiplier": 1,
-            "IsDoublePoint": false
+            "IsDoublePoint": true
         }
     ],
     [
@@ -774,7 +774,7 @@
             "Letter": "v",
             "AdjacencyAddress": 24,
             "Multiplier": 1,
-            "IsDoublePoint": false
+            "IsDoublePoint": true
         }
     ],
     [
@@ -813,7 +813,7 @@
         {
             "Letter": "e",
             "AdjacencyAddress": 17,
-            "Multiplier": 1,
+            "Multiplier": 2,
             "IsDoublePoint": false
         },
         {
@@ -839,7 +839,7 @@
         {
             "Letter": "e",
             "AdjacencyAddress": 17,
-            "Multiplier": 1,
+            "Multiplier": 2,
             "IsDoublePoint": false
         },
         {
@@ -865,7 +865,7 @@
         {
             "Letter": "e",
             "AdjacencyAddress": 17,
-            "Multiplier": 1,
+            "Multiplier": 2,
             "IsDoublePoint": false
         },
         {
@@ -890,7 +890,7 @@
             "Letter": "v",
             "AdjacencyAddress": 24,
             "Multiplier": 1,
-            "IsDoublePoint": false
+            "IsDoublePoint": true
         }
     ],
     [
