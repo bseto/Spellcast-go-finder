@@ -28,19 +28,19 @@ var exampleWordMatrix = [][]string{
 
 var examplewordmatrix1 = [][]string{
 	{
-		"g", "e", "a", "s", "i",
+		"z", "f", "t", "f", "b",
 	},
 	{
-		"x", "i", "r", "c", "e",
+		"n", "i", "g", "l", "x",
 	},
 	{
-		"u", "l", "z", "c", "b",
+		"t", "r", "i", "u", "j",
 	},
 	{
-		"o", "i", "e", "j", "t",
+		"e", "v", "o", "a", "y",
 	},
 	{
-		"t", "o", "y", "f", "n",
+		"s", "r", "e", "r", "o",
 	},
 }
 
@@ -61,7 +61,7 @@ func TestGetNeighbors(t *testing.T) {
 				wordMatrix: exampleWordMatrix,
 				row:        0, col: 2, // B on the first row
 			},
-			want: []Node{{"O", 1}, {"E", 3}, {"A", 6}, {"E", 7}, {"D", 8}},
+			want: []Node{{"o", 1}, {"e", 3}, {"a", 6}, {"e", 7}, {"d", 8}},
 		},
 	}
 	for _, tt := range tests {

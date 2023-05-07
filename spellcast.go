@@ -25,12 +25,13 @@ func NewSpellCastFinder(trie Trie, boardMatrix [][]string) *SpellCastFinder {
 	}
 }
 
-func (s *SpellCastFinder) FindSolution() {
+func (s *SpellCastFinder) FindSolution() []Score {
 	numOfTiles := len(s.adjacencyMatrix)
 	for i := 0; i < numOfTiles; i++ {
 		s.DFSRecursive(i, "", map[int]bool{})
 	}
 	s.words = RemoveDuplicates(s.words)
+	return CalculateAndSortByScore(s.words)
 }
 
 // DFS will return all the max length strings it can from the tile.
