@@ -1,13 +1,15 @@
 package main
 
+import "strings"
+
 type BoardTile struct {
-	Letter      string
-	Multiplier  int
-	DoublePoint bool
+	Letter        string
+	Multiplier    int
+	IsDoublePoint bool
 }
 
 func Letter(letter string) BoardTile {
-	return BoardTile{Letter: letter}
+	return BoardTile{Letter: letter, Multiplier: 1}
 }
 
 func LetterMult(letter string, multiplier int) BoardTile {
@@ -15,12 +17,14 @@ func LetterMult(letter string, multiplier int) BoardTile {
 }
 
 func LetterDouble(letter string) BoardTile {
-	return BoardTile{Letter: letter, DoublePoint: true}
+	return BoardTile{Letter: letter, Multiplier: 1, IsDoublePoint: true}
 }
 
 type Node struct {
 	Letter           string
 	AdjacencyAddress int
+	Multiplier       int
+	IsDoublePoint    bool
 }
 
 type Trie interface {
@@ -33,7 +37,17 @@ type Trie interface {
 type SpellCastFinder struct {
 	trie            Trie
 	adjacencyMatrix [][]Node
-	words           []string
+	words           []NodeWord
+}
+
+type NodeWord []Node
+
+func (n NodeWord) ToString() string {
+	var builder strings.Builder
+	for _, node := range n {
+		builder.WriteString(node.Letter)
+	}
+	return builder.String()
 }
 
 func NewSpellCastFinder(trie Trie, boardMatrix [][]BoardTile) *SpellCastFinder {
@@ -46,7 +60,7 @@ func NewSpellCastFinder(trie Trie, boardMatrix [][]BoardTile) *SpellCastFinder {
 func (s *SpellCastFinder) FindSolution() []Score {
 	numOfTiles := len(s.adjacencyMatrix)
 	for i := 0; i < numOfTiles; i++ {
-		s.DFSRecursive(i, "", map[int]bool{})
+		s.DFSRecursive(i, []Node{}, map[int]bool{})
 	}
 	s.words = RemoveDuplicates(s.words)
 	return CalculateAndSortByScore(s.words)
@@ -55,15 +69,15 @@ func (s *SpellCastFinder) FindSolution() []Score {
 // DFS will return all words from a tile that are valid. The only optimization in this DFS is
 // that it'll stop if a potential word is no longer a prefix in the Trie, as in the
 // potential word is no longer potentially a valid word
-func (s *SpellCastFinder) DFSRecursive(tileNum int, currentWord string, visited map[int]bool) {
-	if s.trie.Get(currentWord) {
+func (s *SpellCastFinder) DFSRecursive(tileNum int, currentWord []Node, visited map[int]bool) {
+	if s.trie.Get(NodeWord(currentWord).ToString()) {
 		s.words = append(s.words, currentWord)
 	}
 
 	visited[tileNum] = true
 	for _, letter := range s.adjacencyMatrix[tileNum] {
-		potentialWord := currentWord + letter.Letter
-		if !s.trie.Prefix(potentialWord) {
+		potentialWord := NodeWord(append(currentWord, letter))
+		if !s.trie.Prefix(potentialWord.ToString()) {
 			continue
 		}
 

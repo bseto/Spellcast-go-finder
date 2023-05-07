@@ -1,1 +1,916 @@
-[[{"Letter":"o","AdjacencyAddress":1},{"Letter":"e","AdjacencyAddress":5},{"Letter":"a","AdjacencyAddress":6}],[{"Letter":"i","AdjacencyAddress":0},{"Letter":"b","AdjacencyAddress":2},{"Letter":"e","AdjacencyAddress":5},{"Letter":"a","AdjacencyAddress":6},{"Letter":"e","AdjacencyAddress":7}],[{"Letter":"o","AdjacencyAddress":1},{"Letter":"e","AdjacencyAddress":3},{"Letter":"a","AdjacencyAddress":6},{"Letter":"e","AdjacencyAddress":7},{"Letter":"d","AdjacencyAddress":8}],[{"Letter":"b","AdjacencyAddress":2},{"Letter":"t","AdjacencyAddress":4},{"Letter":"e","AdjacencyAddress":7},{"Letter":"d","AdjacencyAddress":8},{"Letter":"c","AdjacencyAddress":9}],[{"Letter":"e","AdjacencyAddress":3},{"Letter":"d","AdjacencyAddress":8},{"Letter":"c","AdjacencyAddress":9}],[{"Letter":"i","AdjacencyAddress":0},{"Letter":"o","AdjacencyAddress":1},{"Letter":"a","AdjacencyAddress":6},{"Letter":"e","AdjacencyAddress":10},{"Letter":"v","AdjacencyAddress":11}],[{"Letter":"i","AdjacencyAddress":0},{"Letter":"o","AdjacencyAddress":1},{"Letter":"b","AdjacencyAddress":2},{"Letter":"e","AdjacencyAddress":5},{"Letter":"e","AdjacencyAddress":7},{"Letter":"e","AdjacencyAddress":10},{"Letter":"v","AdjacencyAddress":11},{"Letter":"r","AdjacencyAddress":12}],[{"Letter":"o","AdjacencyAddress":1},{"Letter":"b","AdjacencyAddress":2},{"Letter":"e","AdjacencyAddress":3},{"Letter":"a","AdjacencyAddress":6},{"Letter":"d","AdjacencyAddress":8},{"Letter":"v","AdjacencyAddress":11},{"Letter":"r","AdjacencyAddress":12},{"Letter":"d","AdjacencyAddress":13}],[{"Letter":"b","AdjacencyAddress":2},{"Letter":"e","AdjacencyAddress":3},{"Letter":"t","AdjacencyAddress":4},{"Letter":"e","AdjacencyAddress":7},{"Letter":"c","AdjacencyAddress":9},{"Letter":"r","AdjacencyAddress":12},{"Letter":"d","AdjacencyAddress":13},{"Letter":"d","AdjacencyAddress":14}],[{"Letter":"e","AdjacencyAddress":3},{"Letter":"t","AdjacencyAddress":4},{"Letter":"d","AdjacencyAddress":8},{"Letter":"d","AdjacencyAddress":13},{"Letter":"d","AdjacencyAddress":14}],[{"Letter":"e","AdjacencyAddress":5},{"Letter":"a","AdjacencyAddress":6},{"Letter":"v","AdjacencyAddress":11},{"Letter":"a","AdjacencyAddress":15},{"Letter":"a","AdjacencyAddress":16}],[{"Letter":"e","AdjacencyAddress":5},{"Letter":"a","AdjacencyAddress":6},{"Letter":"e","AdjacencyAddress":7},{"Letter":"e","AdjacencyAddress":10},{"Letter":"r","AdjacencyAddress":12},{"Letter":"a","AdjacencyAddress":15},{"Letter":"a","AdjacencyAddress":16},{"Letter":"e","AdjacencyAddress":17}],[{"Letter":"a","AdjacencyAddress":6},{"Letter":"e","AdjacencyAddress":7},{"Letter":"d","AdjacencyAddress":8},{"Letter":"v","AdjacencyAddress":11},{"Letter":"d","AdjacencyAddress":13},{"Letter":"a","AdjacencyAddress":16},{"Letter":"e","AdjacencyAddress":17},{"Letter":"g","AdjacencyAddress":18}],[{"Letter":"e","AdjacencyAddress":7},{"Letter":"d","AdjacencyAddress":8},{"Letter":"c","AdjacencyAddress":9},{"Letter":"r","AdjacencyAddress":12},{"Letter":"d","AdjacencyAddress":14},{"Letter":"e","AdjacencyAddress":17},{"Letter":"g","AdjacencyAddress":18},{"Letter":"n","AdjacencyAddress":19}],[{"Letter":"d","AdjacencyAddress":8},{"Letter":"c","AdjacencyAddress":9},{"Letter":"d","AdjacencyAddress":13},{"Letter":"g","AdjacencyAddress":18},{"Letter":"n","AdjacencyAddress":19}],[{"Letter":"e","AdjacencyAddress":10},{"Letter":"v","AdjacencyAddress":11},{"Letter":"a","AdjacencyAddress":16},{"Letter":"g","AdjacencyAddress":20},{"Letter":"l","AdjacencyAddress":21}],[{"Letter":"e","AdjacencyAddress":10},{"Letter":"v","AdjacencyAddress":11},{"Letter":"r","AdjacencyAddress":12},{"Letter":"a","AdjacencyAddress":15},{"Letter":"e","AdjacencyAddress":17},{"Letter":"g","AdjacencyAddress":20},{"Letter":"l","AdjacencyAddress":21},{"Letter":"u","AdjacencyAddress":22}],[{"Letter":"v","AdjacencyAddress":11},{"Letter":"r","AdjacencyAddress":12},{"Letter":"d","AdjacencyAddress":13},{"Letter":"a","AdjacencyAddress":16},{"Letter":"g","AdjacencyAddress":18},{"Letter":"l","AdjacencyAddress":21},{"Letter":"u","AdjacencyAddress":22},{"Letter":"n","AdjacencyAddress":23}],[{"Letter":"r","AdjacencyAddress":12},{"Letter":"d","AdjacencyAddress":13},{"Letter":"d","AdjacencyAddress":14},{"Letter":"e","AdjacencyAddress":17},{"Letter":"n","AdjacencyAddress":19},{"Letter":"u","AdjacencyAddress":22},{"Letter":"n","AdjacencyAddress":23},{"Letter":"v","AdjacencyAddress":24}],[{"Letter":"d","AdjacencyAddress":13},{"Letter":"d","AdjacencyAddress":14},{"Letter":"g","AdjacencyAddress":18},{"Letter":"n","AdjacencyAddress":23},{"Letter":"v","AdjacencyAddress":24}],[{"Letter":"a","AdjacencyAddress":15},{"Letter":"a","AdjacencyAddress":16},{"Letter":"l","AdjacencyAddress":21}],[{"Letter":"a","AdjacencyAddress":15},{"Letter":"a","AdjacencyAddress":16},{"Letter":"e","AdjacencyAddress":17},{"Letter":"g","AdjacencyAddress":20},{"Letter":"u","AdjacencyAddress":22}],[{"Letter":"a","AdjacencyAddress":16},{"Letter":"e","AdjacencyAddress":17},{"Letter":"g","AdjacencyAddress":18},{"Letter":"l","AdjacencyAddress":21},{"Letter":"n","AdjacencyAddress":23}],[{"Letter":"e","AdjacencyAddress":17},{"Letter":"g","AdjacencyAddress":18},{"Letter":"n","AdjacencyAddress":19},{"Letter":"u","AdjacencyAddress":22},{"Letter":"v","AdjacencyAddress":24}],[{"Letter":"g","AdjacencyAddress":18},{"Letter":"n","AdjacencyAddress":19},{"Letter":"n","AdjacencyAddress":23}]]
+[
+    [
+        {
+            "Letter": "o",
+            "AdjacencyAddress": 1,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "e",
+            "AdjacencyAddress": 5,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "a",
+            "AdjacencyAddress": 6,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        }
+    ],
+    [
+        {
+            "Letter": "i",
+            "AdjacencyAddress": 0,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "b",
+            "AdjacencyAddress": 2,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "e",
+            "AdjacencyAddress": 5,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "a",
+            "AdjacencyAddress": 6,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "e",
+            "AdjacencyAddress": 7,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        }
+    ],
+    [
+        {
+            "Letter": "o",
+            "AdjacencyAddress": 1,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "e",
+            "AdjacencyAddress": 3,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "a",
+            "AdjacencyAddress": 6,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "e",
+            "AdjacencyAddress": 7,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "d",
+            "AdjacencyAddress": 8,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        }
+    ],
+    [
+        {
+            "Letter": "b",
+            "AdjacencyAddress": 2,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "t",
+            "AdjacencyAddress": 4,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "e",
+            "AdjacencyAddress": 7,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "d",
+            "AdjacencyAddress": 8,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "c",
+            "AdjacencyAddress": 9,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        }
+    ],
+    [
+        {
+            "Letter": "e",
+            "AdjacencyAddress": 3,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "d",
+            "AdjacencyAddress": 8,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "c",
+            "AdjacencyAddress": 9,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        }
+    ],
+    [
+        {
+            "Letter": "i",
+            "AdjacencyAddress": 0,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "o",
+            "AdjacencyAddress": 1,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "a",
+            "AdjacencyAddress": 6,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "e",
+            "AdjacencyAddress": 10,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "v",
+            "AdjacencyAddress": 11,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        }
+    ],
+    [
+        {
+            "Letter": "i",
+            "AdjacencyAddress": 0,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "o",
+            "AdjacencyAddress": 1,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "b",
+            "AdjacencyAddress": 2,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "e",
+            "AdjacencyAddress": 5,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "e",
+            "AdjacencyAddress": 7,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "e",
+            "AdjacencyAddress": 10,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "v",
+            "AdjacencyAddress": 11,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "r",
+            "AdjacencyAddress": 12,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        }
+    ],
+    [
+        {
+            "Letter": "o",
+            "AdjacencyAddress": 1,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "b",
+            "AdjacencyAddress": 2,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "e",
+            "AdjacencyAddress": 3,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "a",
+            "AdjacencyAddress": 6,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "d",
+            "AdjacencyAddress": 8,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "v",
+            "AdjacencyAddress": 11,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "r",
+            "AdjacencyAddress": 12,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "d",
+            "AdjacencyAddress": 13,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        }
+    ],
+    [
+        {
+            "Letter": "b",
+            "AdjacencyAddress": 2,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "e",
+            "AdjacencyAddress": 3,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "t",
+            "AdjacencyAddress": 4,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "e",
+            "AdjacencyAddress": 7,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "c",
+            "AdjacencyAddress": 9,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "r",
+            "AdjacencyAddress": 12,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "d",
+            "AdjacencyAddress": 13,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "d",
+            "AdjacencyAddress": 14,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        }
+    ],
+    [
+        {
+            "Letter": "e",
+            "AdjacencyAddress": 3,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "t",
+            "AdjacencyAddress": 4,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "d",
+            "AdjacencyAddress": 8,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "d",
+            "AdjacencyAddress": 13,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "d",
+            "AdjacencyAddress": 14,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        }
+    ],
+    [
+        {
+            "Letter": "e",
+            "AdjacencyAddress": 5,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "a",
+            "AdjacencyAddress": 6,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "v",
+            "AdjacencyAddress": 11,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "a",
+            "AdjacencyAddress": 15,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "a",
+            "AdjacencyAddress": 16,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        }
+    ],
+    [
+        {
+            "Letter": "e",
+            "AdjacencyAddress": 5,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "a",
+            "AdjacencyAddress": 6,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "e",
+            "AdjacencyAddress": 7,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "e",
+            "AdjacencyAddress": 10,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "r",
+            "AdjacencyAddress": 12,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "a",
+            "AdjacencyAddress": 15,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "a",
+            "AdjacencyAddress": 16,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "e",
+            "AdjacencyAddress": 17,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        }
+    ],
+    [
+        {
+            "Letter": "a",
+            "AdjacencyAddress": 6,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "e",
+            "AdjacencyAddress": 7,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "d",
+            "AdjacencyAddress": 8,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "v",
+            "AdjacencyAddress": 11,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "d",
+            "AdjacencyAddress": 13,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "a",
+            "AdjacencyAddress": 16,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "e",
+            "AdjacencyAddress": 17,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "g",
+            "AdjacencyAddress": 18,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        }
+    ],
+    [
+        {
+            "Letter": "e",
+            "AdjacencyAddress": 7,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "d",
+            "AdjacencyAddress": 8,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "c",
+            "AdjacencyAddress": 9,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "r",
+            "AdjacencyAddress": 12,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "d",
+            "AdjacencyAddress": 14,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "e",
+            "AdjacencyAddress": 17,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "g",
+            "AdjacencyAddress": 18,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "n",
+            "AdjacencyAddress": 19,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        }
+    ],
+    [
+        {
+            "Letter": "d",
+            "AdjacencyAddress": 8,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "c",
+            "AdjacencyAddress": 9,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "d",
+            "AdjacencyAddress": 13,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "g",
+            "AdjacencyAddress": 18,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "n",
+            "AdjacencyAddress": 19,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        }
+    ],
+    [
+        {
+            "Letter": "e",
+            "AdjacencyAddress": 10,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "v",
+            "AdjacencyAddress": 11,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "a",
+            "AdjacencyAddress": 16,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "g",
+            "AdjacencyAddress": 20,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "l",
+            "AdjacencyAddress": 21,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        }
+    ],
+    [
+        {
+            "Letter": "e",
+            "AdjacencyAddress": 10,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "v",
+            "AdjacencyAddress": 11,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "r",
+            "AdjacencyAddress": 12,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "a",
+            "AdjacencyAddress": 15,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "e",
+            "AdjacencyAddress": 17,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "g",
+            "AdjacencyAddress": 20,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "l",
+            "AdjacencyAddress": 21,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "u",
+            "AdjacencyAddress": 22,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        }
+    ],
+    [
+        {
+            "Letter": "v",
+            "AdjacencyAddress": 11,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "r",
+            "AdjacencyAddress": 12,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "d",
+            "AdjacencyAddress": 13,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "a",
+            "AdjacencyAddress": 16,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "g",
+            "AdjacencyAddress": 18,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "l",
+            "AdjacencyAddress": 21,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "u",
+            "AdjacencyAddress": 22,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "n",
+            "AdjacencyAddress": 23,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        }
+    ],
+    [
+        {
+            "Letter": "r",
+            "AdjacencyAddress": 12,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "d",
+            "AdjacencyAddress": 13,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "d",
+            "AdjacencyAddress": 14,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "e",
+            "AdjacencyAddress": 17,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "n",
+            "AdjacencyAddress": 19,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "u",
+            "AdjacencyAddress": 22,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "n",
+            "AdjacencyAddress": 23,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "v",
+            "AdjacencyAddress": 24,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        }
+    ],
+    [
+        {
+            "Letter": "d",
+            "AdjacencyAddress": 13,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "d",
+            "AdjacencyAddress": 14,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "g",
+            "AdjacencyAddress": 18,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "n",
+            "AdjacencyAddress": 23,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "v",
+            "AdjacencyAddress": 24,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        }
+    ],
+    [
+        {
+            "Letter": "a",
+            "AdjacencyAddress": 15,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "a",
+            "AdjacencyAddress": 16,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "l",
+            "AdjacencyAddress": 21,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        }
+    ],
+    [
+        {
+            "Letter": "a",
+            "AdjacencyAddress": 15,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "a",
+            "AdjacencyAddress": 16,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "e",
+            "AdjacencyAddress": 17,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "g",
+            "AdjacencyAddress": 20,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "u",
+            "AdjacencyAddress": 22,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        }
+    ],
+    [
+        {
+            "Letter": "a",
+            "AdjacencyAddress": 16,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "e",
+            "AdjacencyAddress": 17,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "g",
+            "AdjacencyAddress": 18,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "l",
+            "AdjacencyAddress": 21,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "n",
+            "AdjacencyAddress": 23,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        }
+    ],
+    [
+        {
+            "Letter": "e",
+            "AdjacencyAddress": 17,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "g",
+            "AdjacencyAddress": 18,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "n",
+            "AdjacencyAddress": 19,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "u",
+            "AdjacencyAddress": 22,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "v",
+            "AdjacencyAddress": 24,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        }
+    ],
+    [
+        {
+            "Letter": "g",
+            "AdjacencyAddress": 18,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "n",
+            "AdjacencyAddress": 19,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        },
+        {
+            "Letter": "n",
+            "AdjacencyAddress": 23,
+            "Multiplier": 1,
+            "IsDoublePoint": false
+        }
+    ]
+]

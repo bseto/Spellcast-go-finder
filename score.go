@@ -19,15 +19,22 @@ type Score struct {
 	Score int
 }
 
-func CalculateAndSortByScore(words []string) []Score {
+func CalculateAndSortByScore(words []NodeWord) []Score {
 	scores := make([]Score, len(words))
 	for i, word := range words {
 		var currentScore int
-		for _, letter := range word {
-			currentScore += PointMap[strings.ToUpper(string(letter))]
+		var multiply bool
+		for _, wordNode := range word {
+			currentScore += PointMap[strings.ToUpper(wordNode.Letter)] * wordNode.Multiplier
+			if wordNode.IsDoublePoint {
+				multiply = true
+			}
+		}
+		if multiply {
+			currentScore = 2 * currentScore
 		}
 		scores[i] = Score{
-			Word:  word,
+			Word:  word.ToString(),
 			Score: currentScore,
 		}
 	}

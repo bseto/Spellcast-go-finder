@@ -43,7 +43,13 @@ func TestGetNeighbors(t *testing.T) {
 				wordMatrix: exampleWordMatrix,
 				row:        0, col: 2, // B on the first row
 			},
-			want: []Node{{"o", 1}, {"e", 3}, {"a", 6}, {"e", 7}, {"d", 8}},
+			want: []Node{
+				{Letter: "o", AdjacencyAddress: 1, Multiplier: 1},
+				{Letter: "e", AdjacencyAddress: 3, Multiplier: 1},
+				{Letter: "a", AdjacencyAddress: 6, Multiplier: 1},
+				{Letter: "e", AdjacencyAddress: 7, Multiplier: 1},
+				{Letter: "d", AdjacencyAddress: 8, Multiplier: 1},
+			},
 		},
 	}
 	for _, tt := range tests {
@@ -75,7 +81,7 @@ func TestToAdjacenyMatrix(t *testing.T) {
 
 			//gotAdjacency := ToAdjacenyMatrix(tt.args.wordMatrix)
 			//b, _ := json.Marshal(gotAdjacency)
-			//os.WriteFile(tt.wantAdjacencyFromJSON, b, 777)
+			//os.WriteFile(tt.wantAdjacencyFromJSON, b, 0777)
 
 			b, err := os.ReadFile(tt.wantAdjacencyFromJSON)
 			if err != nil {

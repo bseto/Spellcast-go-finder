@@ -38,11 +38,13 @@ func GetNeighbors(wordMatrix [][]BoardTile, row, col int) []Node {
 			if colDeviation == 0 && rowDeviation == 0 {
 				continue // skip itself
 			}
-			Nodes = append(
-				Nodes,
+			boardTile := wordMatrix[row+rowDeviation][col+colDeviation]
+			Nodes = append(Nodes,
 				Node{
-					Letter:           wordMatrix[row+rowDeviation][col+colDeviation].Letter,
+					Letter:           boardTile.Letter,
 					AdjacencyAddress: (height * (row + rowDeviation)) + col + colDeviation,
+					Multiplier:       boardTile.Multiplier,
+					IsDoublePoint:    boardTile.IsDoublePoint,
 				},
 			)
 		}
@@ -69,12 +71,13 @@ func StringFromSlice(letters []string) string {
 	return b.String()
 }
 
-func RemoveDuplicates(slice []string) []string {
+func RemoveDuplicates(slice []NodeWord) []NodeWord {
 	tempMap := make(map[string]bool)
-	newList := []string{}
+	newList := []NodeWord{}
 	for _, s := range slice {
-		if _, ok := tempMap[s]; !ok {
-			tempMap[s] = true
+		sString := s.ToString()
+		if _, ok := tempMap[sString]; !ok {
+			tempMap[sString] = true
 			newList = append(newList, s)
 		}
 	}
