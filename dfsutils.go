@@ -68,3 +68,15 @@ func StringFromSlice(letters []string) string {
 	}
 	return b.String()
 }
+
+func RemoveDuplicates(slice []string) []string {
+	tempMap := make(map[string]bool)
+	newList := []string{}
+	for _, s := range slice {
+		if _, ok := tempMap[s]; !ok {
+			tempMap[s] = true
+			newList = append(newList, s)
+		}
+	}
+	return newList
+}

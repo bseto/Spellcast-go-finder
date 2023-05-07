@@ -14,32 +14,36 @@ type Trie interface {
 
 type SpellCastFinder struct {
 	trie            Trie
-	boardMatrix     [][]string
 	adjacencyMatrix [][]Node
 	words           []string
 }
 
-func NewSpellCastFinder(trie Trie) *SpellCastFinder {
+func NewSpellCastFinder(trie Trie, boardMatrix [][]string) *SpellCastFinder {
 	return &SpellCastFinder{
-		trie: trie,
+		trie:            trie,
+		adjacencyMatrix: ToAdjacenyMatrix(boardMatrix),
 	}
 }
 
 func (s *SpellCastFinder) FindSolution() {
-
+	numOfTiles := len(s.adjacencyMatrix)
+	for i := 0; i < numOfTiles; i++ {
+		s.DFSRecursive(i, "", map[int]bool{})
+	}
+	s.words = RemoveDuplicates(s.words)
 }
 
 // DFS will return all the max length strings it can from the tile.
 // Max length as in if there was a partial word zig, but then continued until
 // it became zigzag, then only zigzag will be returned. if another branch of
 // possibilities also include zigs, then zigs, and zigzag would be returned
-func (s *SpellCastFinder) DFSRecursive(tile Node, currentWord string, visited map[int]bool) {
+func (s *SpellCastFinder) DFSRecursive(tileNum int, currentWord string, visited map[int]bool) {
 	if s.trie.Get(currentWord) {
 		s.words = append(s.words, currentWord)
 	}
 
-	visited[tile.AdjacencyAddress] = true
-	for _, letter := range s.adjacencyMatrix[tile.AdjacencyAddress] {
+	visited[tileNum] = true
+	for _, letter := range s.adjacencyMatrix[tileNum] {
 		potentialWord := currentWord + letter.Letter
 		if !s.trie.Prefix(potentialWord) {
 			continue
@@ -50,7 +54,7 @@ func (s *SpellCastFinder) DFSRecursive(tile Node, currentWord string, visited ma
 			for k, v := range visited {
 				copyOfVisited[k] = v
 			}
-			s.DFSRecursive(letter, potentialWord, copyOfVisited)
+			s.DFSRecursive(letter.AdjacencyAddress, potentialWord, copyOfVisited)
 		}
 	}
 }
