@@ -8,45 +8,27 @@ import (
 	"testing"
 )
 
-var exampleWordMatrix = [][]string{
+var exampleWordMatrix = [][]BoardTile{
 	{
-		"i", "o", "b", "e", "t",
+		Letter("i"), Letter("o"), Letter("b"), Letter("e"), Letter("t"),
 	},
 	{
-		"e", "a", "e", "d", "c",
+		Letter("e"), Letter("a"), Letter("e"), Letter("d"), Letter("c"),
 	},
 	{
-		"e", "v", "r", "d", "d",
+		Letter("e"), Letter("v"), Letter("r"), Letter("d"), Letter("d"),
 	},
 	{
-		"a", "a", "e", "g", "n",
+		Letter("a"), Letter("a"), Letter("e"), Letter("g"), Letter("n"),
 	},
 	{
-		"g", "l", "u", "n", "v",
-	},
-}
-
-var examplewordmatrix1 = [][]string{
-	{
-		"z", "f", "t", "f", "b",
-	},
-	{
-		"n", "i", "g", "l", "x",
-	},
-	{
-		"t", "r", "i", "u", "j",
-	},
-	{
-		"e", "v", "o", "a", "y",
-	},
-	{
-		"s", "r", "e", "r", "o",
+		Letter("g"), Letter("l"), Letter("u"), Letter("n"), Letter("v"),
 	},
 }
 
 func TestGetNeighbors(t *testing.T) {
 	type args struct {
-		wordMatrix [][]string
+		wordMatrix [][]BoardTile
 		row        int
 		col        int
 	}
@@ -75,7 +57,7 @@ func TestGetNeighbors(t *testing.T) {
 
 func TestToAdjacenyMatrix(t *testing.T) {
 	type args struct {
-		wordMatrix [][]string
+		wordMatrix [][]BoardTile
 	}
 	tests := []struct {
 		name                  string

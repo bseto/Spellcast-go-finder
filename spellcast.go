@@ -1,5 +1,23 @@
 package main
 
+type BoardTile struct {
+	Letter      string
+	Multiplier  int
+	DoublePoint bool
+}
+
+func Letter(letter string) BoardTile {
+	return BoardTile{Letter: letter}
+}
+
+func LetterMult(letter string, multiplier int) BoardTile {
+	return BoardTile{Letter: letter, Multiplier: multiplier}
+}
+
+func LetterDouble(letter string) BoardTile {
+	return BoardTile{Letter: letter, DoublePoint: true}
+}
+
 type Node struct {
 	Letter           string
 	AdjacencyAddress int
@@ -18,7 +36,7 @@ type SpellCastFinder struct {
 	words           []string
 }
 
-func NewSpellCastFinder(trie Trie, boardMatrix [][]string) *SpellCastFinder {
+func NewSpellCastFinder(trie Trie, boardMatrix [][]BoardTile) *SpellCastFinder {
 	return &SpellCastFinder{
 		trie:            trie,
 		adjacencyMatrix: ToAdjacenyMatrix(boardMatrix),
@@ -34,10 +52,9 @@ func (s *SpellCastFinder) FindSolution() []Score {
 	return CalculateAndSortByScore(s.words)
 }
 
-// DFS will return all the max length strings it can from the tile.
-// Max length as in if there was a partial word zig, but then continued until
-// it became zigzag, then only zigzag will be returned. if another branch of
-// possibilities also include zigs, then zigs, and zigzag would be returned
+// DFS will return all words from a tile that are valid. The only optimization in this DFS is
+// that it'll stop if a potential word is no longer a prefix in the Trie, as in the
+// potential word is no longer potentially a valid word
 func (s *SpellCastFinder) DFSRecursive(tileNum int, currentWord string, visited map[int]bool) {
 	if s.trie.Get(currentWord) {
 		s.words = append(s.words, currentWord)
