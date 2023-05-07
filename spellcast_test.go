@@ -21,7 +21,8 @@ func TestSpellCastFinder_FindSolution(t *testing.T) {
 				if err != nil {
 					t.Fatalf("unable to setup trie: %v", err)
 				}
-				return NewSpellCastFinder(trie, exampleWordMatrix)
+				return NewSpellCastFinder(trie, examplewordmatrix1)
+				//return NewSpellCastFinder(trie, exampleWordMatrix)
 			}(t),
 			goldenFile: filepath.Join("testdata", "examplewordmatrix.SpellCastFinder.json"),
 		},
