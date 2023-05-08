@@ -68,13 +68,14 @@ func TestSpellCastFinder_ManualRun(t *testing.T) {
 				if err != nil {
 					t.Fatalf("unable to setup trie: %v", err)
 				}
-				return NewSpellCastFinder(trie, exampleWordMatrix)
+				return NewSpellCastFinder(trie, exampleWordMatrix2)
 			}(t),
 		},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			scores := tt.s.FindSolutionWithSwap()
+			scores := tt.s.FindSolution()
+			//scores := tt.s.FindSolutionWithSwap()
 			t.Logf("scores: %v", scores)
 		})
 	}

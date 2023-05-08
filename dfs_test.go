@@ -26,6 +26,24 @@ var exampleWordMatrix = [][]BoardTile{
 	},
 }
 
+var exampleWordMatrix2 = [][]BoardTile{
+	{
+		LetterMult("o", 3), Letter("d"), Letter("p"), Letter("u"), Letter("v"),
+	},
+	{
+		Letter("n"), Letter("r"), Letter("b"), Letter("a"), Letter("g"),
+	},
+	{
+		Letter("o"), Letter("w"), Letter("e"), Letter("e"), Letter("l"),
+	},
+	{
+		Letter("o"), Letter("f"), Letter("s"), Letter("n"), Letter("e"),
+	},
+	{
+		Letter("x"), Letter("u"), Letter("u"), Letter("e"), Letter("a"),
+	},
+}
+
 func TestGetNeighbors(t *testing.T) {
 	type args struct {
 		wordMatrix [][]BoardTile
