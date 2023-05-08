@@ -28,19 +28,19 @@ var exampleWordMatrix = [][]BoardTile{
 
 var exampleWordMatrix2 = [][]BoardTile{
 	{
-		LetterMult("o", 3), Letter("d"), Letter("p"), Letter("u"), Letter("v"),
+		Letter("e"), Letter("n"), Letter("t"), Letter("u"), Letter("v"),
 	},
 	{
-		Letter("n"), Letter("r"), Letter("b"), Letter("a"), Letter("g"),
+		Letter("n"), Letter("r"), Letter("i"), Letter("z"), Letter("t"),
 	},
 	{
-		Letter("o"), Letter("w"), Letter("e"), Letter("e"), Letter("l"),
+		Letter("t"), Letter("e"), Letter("t"), Letter("s"), Letter("l"),
 	},
 	{
-		Letter("o"), Letter("f"), Letter("s"), Letter("n"), Letter("e"),
+		Letter("a"), Letter("e"), Letter("a"), Letter("n"), Letter("e"),
 	},
 	{
-		Letter("x"), Letter("u"), Letter("u"), Letter("e"), Letter("a"),
+		LetterDouble("h"), LetterMult("u", 2), Letter("u"), Letter("e"), Letter("a"),
 	},
 }
 

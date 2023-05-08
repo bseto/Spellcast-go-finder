@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"strings"
 )
 
@@ -109,6 +108,7 @@ func (s *SpellCastFinder) FindSolutionWithSwap() []Score {
 	for col := 0; col < height; col++ {
 		for row := 0; row < width; row++ {
 			for letter := 'a'; letter <= 'z'; letter++ {
+				// bug, need to reset the board
 				s.boardMatrix[col][row].Letter = string(letter)
 				s.adjacencyMatrix = ToAdjacenyMatrix(s.boardMatrix)
 				numOfTiles := len(s.adjacencyMatrix)
@@ -127,10 +127,6 @@ func (s *SpellCastFinder) FindSolutionWithSwap() []Score {
 // potential word is no longer potentially a valid word
 func (s *SpellCastFinder) DFSRecursive(tileNum int, currentWord NodeWord, visited map[int]bool) {
 	if s.trie.Get(currentWord.Word.ToString()) {
-		currWord := currentWord.Word.ToString()
-		if currWord == "roof" {
-			fmt.Printf("wtf")
-		}
 		s.words = append(s.words, currentWord)
 		s.debugger = append(s.debugger, currentWord.Word.ToString())
 	}
