@@ -1,6 +1,9 @@
 package main
 
-import "strings"
+import (
+	"fmt"
+	"strings"
+)
 
 type BoardTile struct {
 	Letter        string
@@ -39,6 +42,7 @@ type SpellCastFinder struct {
 	boardMatrix     [][]BoardTile
 	adjacencyMatrix [][]Node
 	words           []NodeWord
+	debugger        []string
 }
 
 type NodeWord struct {
@@ -47,9 +51,10 @@ type NodeWord struct {
 }
 
 func (n NodeWord) Append(node Node) NodeWord {
+	copyOfExisting := make(Nodes, len(n.Word))
+	copy(copyOfExisting, n.Word)
 	return NodeWord{
-		Word: append(n.Word, node),
-		// Ignore Adjacency tracker since we don't mess with it in the DFS
+		Word: append(copyOfExisting, node),
 	}
 }
 
@@ -76,6 +81,24 @@ func (s *SpellCastFinder) FindSolution() []Score {
 	for i := 0; i < numOfTiles; i++ {
 		s.DFSRecursive(i, NodeWord{}, map[int]bool{})
 	}
+
+	//b, err := json.Marshal(s.words)
+	//if err != nil {
+	//fmt.Printf("unable to marshal: %v", err)
+	//}
+	//err = os.WriteFile("plz.json", b, 0777)
+	//if err != nil {
+	//fmt.Printf("unable to write to file: %v", err)
+	//}
+
+	//b, err = json.Marshal(s.debugger)
+	//if err != nil {
+	//fmt.Printf("unable to marshal: %v", err)
+	//}
+	//err = os.WriteFile("plzdebugger.json", b, 0777)
+	//if err != nil {
+	//fmt.Printf("unable to write to file: %v", err)
+	//}
 	s.words = RemoveDuplicates(s.words)
 	return CalculateAndSortByScore(s.words)
 }
@@ -103,18 +126,22 @@ func (s *SpellCastFinder) FindSolutionWithSwap() []Score {
 // that it'll stop if a potential word is no longer a prefix in the Trie, as in the
 // potential word is no longer potentially a valid word
 func (s *SpellCastFinder) DFSRecursive(tileNum int, currentWord NodeWord, visited map[int]bool) {
-	if s.trie.Get(NodeWord(currentWord).Word.ToString()) {
+	if s.trie.Get(currentWord.Word.ToString()) {
+		currWord := currentWord.Word.ToString()
+		if currWord == "roof" {
+			fmt.Printf("wtf")
+		}
 		s.words = append(s.words, currentWord)
+		s.debugger = append(s.debugger, currentWord.Word.ToString())
 	}
 
 	visited[tileNum] = true
 	for _, letter := range s.adjacencyMatrix[tileNum] {
-		potentialWord := currentWord.Append(letter)
-		if !s.trie.Prefix(potentialWord.Word.ToString()) {
-			continue
-		}
-
 		if !visited[letter.AdjacencyAddress] {
+			potentialWord := currentWord.Append(letter)
+			if !s.trie.Prefix(potentialWord.Word.ToString()) {
+				continue
+			}
 			copyOfVisited := make(map[int]bool)
 			for k, v := range visited {
 				copyOfVisited[k] = v

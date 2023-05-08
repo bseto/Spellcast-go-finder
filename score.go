@@ -33,8 +33,12 @@ func CalculateAndSortByScore(words []NodeWord) []Score {
 		if multiply {
 			currentScore = 2 * currentScore
 		}
+		word := nodeWord.Word.ToString()
+		if len(word) >= 6 {
+			currentScore += 10
+		}
 		scores[i] = Score{
-			Word:  nodeWord.Word.ToString(),
+			Word:  word,
 			Score: currentScore,
 		}
 	}
