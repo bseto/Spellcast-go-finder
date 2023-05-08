@@ -1,0 +1,224 @@
+[
+    {
+        "Word": "whatnot",
+        "Score": 44,
+        "Node": [
+            {
+                "Letter": "w",
+                "AdjacencyAddress": 6,
+                "Multiplier": 1,
+                "IsDoublePoint": false
+            },
+            {
+                "Letter": "h",
+                "AdjacencyAddress": 11,
+                "Multiplier": 1,
+                "IsDoublePoint": false
+            },
+            {
+                "Letter": "a",
+                "AdjacencyAddress": 15,
+                "Multiplier": 1,
+                "IsDoublePoint": false
+            },
+            {
+                "Letter": "t",
+                "AdjacencyAddress": 10,
+                "Multiplier": 1,
+                "IsDoublePoint": false
+            },
+            {
+                "Letter": "n",
+                "AdjacencyAddress": 5,
+                "Multiplier": 1,
+                "IsDoublePoint": true
+            },
+            {
+                "Letter": "o",
+                "AdjacencyAddress": 1,
+                "Multiplier": 1,
+                "IsDoublePoint": false
+            },
+            {
+                "Letter": "t",
+                "AdjacencyAddress": 2,
+                "Multiplier": 1,
+                "IsDoublePoint": false
+            }
+        ]
+    },
+    {
+        "Word": "cantrip",
+        "Score": 44,
+        "Node": [
+            {
+                "Letter": "c",
+                "AdjacencyAddress": 5,
+                "Multiplier": 1,
+                "IsDoublePoint": true
+            },
+            {
+                "Letter": "a",
+                "AdjacencyAddress": 0,
+                "Multiplier": 1,
+                "IsDoublePoint": false
+            },
+            {
+                "Letter": "n",
+                "AdjacencyAddress": 1,
+                "Multiplier": 1,
+                "IsDoublePoint": false
+            },
+            {
+                "Letter": "t",
+                "AdjacencyAddress": 2,
+                "Multiplier": 1,
+                "IsDoublePoint": false
+            },
+            {
+                "Letter": "r",
+                "AdjacencyAddress": 7,
+                "Multiplier": 1,
+                "IsDoublePoint": false
+            },
+            {
+                "Letter": "i",
+                "AdjacencyAddress": 12,
+                "Multiplier": 1,
+                "IsDoublePoint": false
+            },
+            {
+                "Letter": "p",
+                "AdjacencyAddress": 18,
+                "Multiplier": 1,
+                "IsDoublePoint": false
+            }
+        ]
+    },
+    {
+        "Word": "turnon",
+        "Score": 44,
+        "Node": [
+            {
+                "Letter": "t",
+                "AdjacencyAddress": 2,
+                "Multiplier": 1,
+                "IsDoublePoint": false
+            },
+            {
+                "Letter": "u",
+                "AdjacencyAddress": 3,
+                "Multiplier": 2,
+                "IsDoublePoint": false
+            },
+            {
+                "Letter": "r",
+                "AdjacencyAddress": 7,
+                "Multiplier": 1,
+                "IsDoublePoint": false
+            },
+            {
+                "Letter": "n",
+                "AdjacencyAddress": 1,
+                "Multiplier": 1,
+                "IsDoublePoint": false
+            },
+            {
+                "Letter": "o",
+                "AdjacencyAddress": 0,
+                "Multiplier": 1,
+                "IsDoublePoint": false
+            },
+            {
+                "Letter": "n",
+                "AdjacencyAddress": 5,
+                "Multiplier": 1,
+                "IsDoublePoint": true
+            }
+        ]
+    },
+    {
+        "Word": "turban",
+        "Score": 48,
+        "Node": [
+            {
+                "Letter": "t",
+                "AdjacencyAddress": 2,
+                "Multiplier": 1,
+                "IsDoublePoint": false
+            },
+            {
+                "Letter": "u",
+                "AdjacencyAddress": 3,
+                "Multiplier": 2,
+                "IsDoublePoint": false
+            },
+            {
+                "Letter": "r",
+                "AdjacencyAddress": 7,
+                "Multiplier": 1,
+                "IsDoublePoint": false
+            },
+            {
+                "Letter": "b",
+                "AdjacencyAddress": 1,
+                "Multiplier": 1,
+                "IsDoublePoint": false
+            },
+            {
+                "Letter": "a",
+                "AdjacencyAddress": 0,
+                "Multiplier": 1,
+                "IsDoublePoint": false
+            },
+            {
+                "Letter": "n",
+                "AdjacencyAddress": 5,
+                "Multiplier": 1,
+                "IsDoublePoint": true
+            }
+        ]
+    },
+    {
+        "Word": "liquid",
+        "Score": 50,
+        "Node": [
+            {
+                "Letter": "l",
+                "AdjacencyAddress": 14,
+                "Multiplier": 1,
+                "IsDoublePoint": false
+            },
+            {
+                "Letter": "i",
+                "AdjacencyAddress": 13,
+                "Multiplier": 1,
+                "IsDoublePoint": false
+            },
+            {
+                "Letter": "q",
+                "AdjacencyAddress": 19,
+                "Multiplier": 1,
+                "IsDoublePoint": true
+            },
+            {
+                "Letter": "u",
+                "AdjacencyAddress": 18,
+                "Multiplier": 1,
+                "IsDoublePoint": false
+            },
+            {
+                "Letter": "i",
+                "AdjacencyAddress": 12,
+                "Multiplier": 1,
+                "IsDoublePoint": false
+            },
+            {
+                "Letter": "d",
+                "AdjacencyAddress": 8,
+                "Multiplier": 1,
+                "IsDoublePoint": false
+            }
+        ]
+    }
+]

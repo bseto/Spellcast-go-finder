@@ -16,8 +16,8 @@ var PointMap = map[string]int{
 
 type Score struct {
 	Word  string
-	node  []Node
 	Score int
+	Node  []Node
 }
 
 func CalculateAndSortByScore(words []NodeWord) []Score {
@@ -41,6 +41,7 @@ func CalculateAndSortByScore(words []NodeWord) []Score {
 		scores[i] = Score{
 			Word:  word,
 			Score: currentScore,
+			Node:  nodeWord.Word,
 		}
 	}
 	sort.Slice(scores, func(i, j int) bool {

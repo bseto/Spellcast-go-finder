@@ -74,9 +74,18 @@ func TestSpellCastFinder_ManualRun(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			scores := tt.s.FindSolution()
-			//scores := tt.s.FindSolutionWithSwap()
-			t.Logf("scores: %v", scores)
+			//scores := tt.s.FindSolution()
+			scores := tt.s.FindSolutionWithSwap()
+			scores = scores[len(scores)-5:]
+
+			a, err := json.Marshal(scores)
+			if err != nil {
+				t.Fatalf("unable to write to file: %v", err)
+			}
+			err = os.WriteFile("scores.json", a, 0777)
+			if err != nil {
+				t.Fatalf("unable to write to file: %v", err)
+			}
 		})
 	}
 }

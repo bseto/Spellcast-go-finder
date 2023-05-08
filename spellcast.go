@@ -4,24 +4,6 @@ import (
 	"strings"
 )
 
-type BoardTile struct {
-	Letter        string
-	Multiplier    int
-	IsDoublePoint bool
-}
-
-func Letter(letter string) BoardTile {
-	return BoardTile{Letter: letter, Multiplier: 1}
-}
-
-func LetterMult(letter string, multiplier int) BoardTile {
-	return BoardTile{Letter: letter, Multiplier: multiplier}
-}
-
-func LetterDouble(letter string) BoardTile {
-	return BoardTile{Letter: letter, Multiplier: 1, IsDoublePoint: true}
-}
-
 type Node struct {
 	Letter           string
 	AdjacencyAddress int
