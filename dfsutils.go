@@ -75,7 +75,7 @@ func RemoveDuplicates(slice []NodeWord) []NodeWord {
 	tempMap := make(map[string]bool)
 	newList := []NodeWord{}
 	for _, s := range slice {
-		sString := s.ToString()
+		sString := s.Word.ToString()
 		if _, ok := tempMap[sString]; !ok {
 			tempMap[sString] = true
 			newList = append(newList, s)

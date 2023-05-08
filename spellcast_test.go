@@ -56,26 +56,26 @@ func TestSpellCastFinder_FindSolution(t *testing.T) {
 	}
 }
 
-//func TestSpellCastFinder_ManualRunSolution(t *testing.T) {
-//tests := []struct {
-//name string
-//s    *SpellCastFinder
-//}{
-//{
-//name: "Just manually running",
-//s: func(t *testing.T) *SpellCastFinder {
-//trie, err := NewTrie("words.txt")
-//if err != nil {
-//t.Fatalf("unable to setup trie: %v", err)
-//}
-//return NewSpellCastFinder(trie, examplewordmatrix1)
-//}(t),
-//},
-//}
-//for _, tt := range tests {
-//t.Run(tt.name, func(t *testing.T) {
-//scores := tt.s.FindSolution()
-//t.Log(scores)
-//})
-//}
-//}
+func TestSpellCastFinder_ManualRun(t *testing.T) {
+	tests := []struct {
+		name string
+		s    *SpellCastFinder
+	}{
+		{
+			name: "Manual Run",
+			s: func(t *testing.T) *SpellCastFinder {
+				trie, err := NewTrie("words.txt")
+				if err != nil {
+					t.Fatalf("unable to setup trie: %v", err)
+				}
+				return NewSpellCastFinder(trie, exampleWordMatrix)
+			}(t),
+		},
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			scores := tt.s.FindSolutionWithSwap()
+			t.Logf("scores: %v", scores)
+		})
+	}
+}

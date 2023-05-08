@@ -41,9 +41,21 @@ type SpellCastFinder struct {
 	words           []NodeWord
 }
 
-type NodeWord []Node
+type NodeWord struct {
+	Word                            Nodes
+	AdjacencyAddressToSwappedLetter map[int]string // if there is any swapping happening, report it here
+}
 
-func (n NodeWord) ToString() string {
+func (n NodeWord) Append(node Node) NodeWord {
+	return NodeWord{
+		Word: append(n.Word, node),
+		// Ignore Adjacency tracker since we don't mess with it in the DFS
+	}
+}
+
+type Nodes []Node
+
+func (n Nodes) ToString() string {
 	var builder strings.Builder
 	for _, node := range n {
 		builder.WriteString(node.Letter)
@@ -62,7 +74,7 @@ func (s *SpellCastFinder) FindSolution() []Score {
 	s.adjacencyMatrix = ToAdjacenyMatrix(s.boardMatrix)
 	numOfTiles := len(s.adjacencyMatrix)
 	for i := 0; i < numOfTiles; i++ {
-		s.DFSRecursive(i, []Node{}, map[int]bool{})
+		s.DFSRecursive(i, NodeWord{}, map[int]bool{})
 	}
 	s.words = RemoveDuplicates(s.words)
 	return CalculateAndSortByScore(s.words)
@@ -78,7 +90,7 @@ func (s *SpellCastFinder) FindSolutionWithSwap() []Score {
 				s.adjacencyMatrix = ToAdjacenyMatrix(s.boardMatrix)
 				numOfTiles := len(s.adjacencyMatrix)
 				for i := 0; i < numOfTiles; i++ {
-					s.DFSRecursive(i, []Node{}, map[int]bool{})
+					s.DFSRecursive(i, NodeWord{}, map[int]bool{})
 				}
 			}
 		}
@@ -90,15 +102,15 @@ func (s *SpellCastFinder) FindSolutionWithSwap() []Score {
 // DFS will return all words from a tile that are valid. The only optimization in this DFS is
 // that it'll stop if a potential word is no longer a prefix in the Trie, as in the
 // potential word is no longer potentially a valid word
-func (s *SpellCastFinder) DFSRecursive(tileNum int, currentWord []Node, visited map[int]bool) {
-	if s.trie.Get(NodeWord(currentWord).ToString()) {
+func (s *SpellCastFinder) DFSRecursive(tileNum int, currentWord NodeWord, visited map[int]bool) {
+	if s.trie.Get(NodeWord(currentWord).Word.ToString()) {
 		s.words = append(s.words, currentWord)
 	}
 
 	visited[tileNum] = true
 	for _, letter := range s.adjacencyMatrix[tileNum] {
-		potentialWord := NodeWord(append(currentWord, letter))
-		if !s.trie.Prefix(potentialWord.ToString()) {
+		potentialWord := currentWord.Append(letter)
+		if !s.trie.Prefix(potentialWord.Word.ToString()) {
 			continue
 		}
 
