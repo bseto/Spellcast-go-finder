@@ -80,24 +80,6 @@ func (s *SpellCastFinder) FindSolution() []Score {
 	for i := 0; i < numOfTiles; i++ {
 		s.DFSRecursive(i, NodeWord{}, map[int]bool{})
 	}
-
-	//b, err := json.Marshal(s.words)
-	//if err != nil {
-	//fmt.Printf("unable to marshal: %v", err)
-	//}
-	//err = os.WriteFile("plz.json", b, 0777)
-	//if err != nil {
-	//fmt.Printf("unable to write to file: %v", err)
-	//}
-
-	//b, err = json.Marshal(s.debugger)
-	//if err != nil {
-	//fmt.Printf("unable to marshal: %v", err)
-	//}
-	//err = os.WriteFile("plzdebugger.json", b, 0777)
-	//if err != nil {
-	//fmt.Printf("unable to write to file: %v", err)
-	//}
 	s.words = RemoveDuplicates(s.words)
 	return CalculateAndSortByScore(s.words)
 }
@@ -109,12 +91,14 @@ func (s *SpellCastFinder) FindSolutionWithSwap() []Score {
 		for row := 0; row < width; row++ {
 			for letter := 'a'; letter <= 'z'; letter++ {
 				// bug, need to reset the board
+				oldLetter := s.boardMatrix[col][row]
 				s.boardMatrix[col][row].Letter = string(letter)
 				s.adjacencyMatrix = ToAdjacenyMatrix(s.boardMatrix)
 				numOfTiles := len(s.adjacencyMatrix)
 				for i := 0; i < numOfTiles; i++ {
 					s.DFSRecursive(i, NodeWord{}, map[int]bool{})
 				}
+				s.boardMatrix[col][row] = oldLetter
 			}
 		}
 	}

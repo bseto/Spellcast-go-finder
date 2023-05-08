@@ -16,6 +16,7 @@ var PointMap = map[string]int{
 
 type Score struct {
 	Word  string
+	node  []Node
 	Score int
 }
 
